@@ -8,6 +8,6 @@ task clean(type:Delete){
     delete rootProject.buildDir
 }
 ext{
-    consLayoutVersion = '2.1.4'
+    consLayoutVersion ='2.1.4'
 }
 

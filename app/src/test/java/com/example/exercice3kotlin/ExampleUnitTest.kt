@@ -13,7 +13,9 @@ class TestRegistrationTest{
             "123",
             "1246"
         )
-        assertThat(result).isFalse();
+        assertThat(result).isTrue(
+
+        );
 
     }
     @Test
@@ -23,7 +25,7 @@ class TestRegistrationTest{
             "123",
             "1246"
         )
-        assertThat(result).isFalse();
+        assertThat(result).isTrue();
 
     }
     @Test

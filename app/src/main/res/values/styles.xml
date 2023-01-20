@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="logoapp_background">#3D62DC</color>
+
+    <style name="Theme_AppCompat_Light_Dialoggggggg" />
 </resources>
