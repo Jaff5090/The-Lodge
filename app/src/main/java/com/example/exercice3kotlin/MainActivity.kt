@@ -43,20 +43,17 @@ class MainActivity : AppCompatActivity() {
     private var selectedDate: Calendar = Calendar.getInstance()
     //show dialog if i set button Image
     private fun showDatePicker() {
-
         val datePickerDialog = DatePickerDialog(
             this,
-            androidx.constraintlayout.widget.R.style.ThemeOverlay_AppCompat_Dialog,
+            androidx.constraintlayout.widget.R.style.Theme_AppCompat_Light_Dialog,
             dateSetListener,
             selectedDate.get(Calendar.YEAR),
             selectedDate.get(Calendar.MONTH),
             selectedDate.get(Calendar.DAY_OF_MONTH)
         )
-
-
-        datePickerDialog.datePicker.minDate = System.currentTimeMillis() - 1000
         datePickerDialog.show()
     }
+
 
     ////set date into TextView
     private val dateSetListener = DatePickerDialog.OnDateSetListener { _, year, month, day ->
