@@ -1,119 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SecondActivity">
- <LinearLayout
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:layout_gravity="center"
-     android:layout_marginTop="20dp"
-     android:orientation="vertical">
-     <TextView
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:gravity="center"
-         android:textStyle="bold|italic"
-         android:textColor="@color/gray"
-         android:text="@string/actors" />
-     <LinearLayout
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:layout_margin="10dp"
-         android:id="@+id/images_group"
-         android:background="@color/gray_1"
-         android:orientation="horizontal"
-         >
-
-         <ImageView
-
-             android:id="@+id/first_image"
-             android:layout_width="100dp"
-             android:layout_margin="10dp"
-
-             android:layout_height="100dp"
-             android:scaleType="centerCrop"
-             android:src="@drawable/selena"
-             tools:ignore="ContentDescription" />
-         <ImageView
-             android:id="@+id/second_image"
-             android:layout_width="100dp"
-             android:layout_margin="10dp"
-
-             android:layout_height="100dp"
-             android:scaleType="centerCrop"
-             android:src="@drawable/ladygaga"
-             tools:ignore="ContentDescription" />
-         <ImageView
-             android:id="@+id/third_image"
-             android:layout_width="100dp"
-             android:layout_margin="10dp"
-
-
-             android:layout_height="100dp"
-             android:scaleType="centerCrop"
-             android:src="@drawable/kimkardashian"
-             tools:ignore="ContentDescription" />
-
-     </LinearLayout>
- </LinearLayout>
-    <ScrollView
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/options_linear_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question goes here"
+        android:textSize="24sp"
+        android:layout_margin="16dp" />
+
+    <RadioGroup
+        android:id="@+id/options_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/option_1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:text="@string/actors"
+            android:textSize="18sp"
+            android:layout_margin="16dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Question 1" />
+        <RadioButton
+            android:id="@+id/option_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"
+            android:textSize="18sp"
+            android:layout_margin="16dp" />
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Option 1" />
+        <RadioButton
+            android:id="@+id/option_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"
+            android:textSize="18sp"
+            android:layout_margin="16dp" />
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Option 2" />
+        <RadioButton
+            android:id="@+id/option_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 4"
+            android:textSize="18sp"
+            android:layout_margin="16dp" />
 
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Option 3" />
+    </RadioGroup>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Question 2" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Option 1" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Option 2" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Option 3" />
-
-        </LinearLayout>
-    </ScrollView>
-
-
-
-
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_margin="16dp" />
 
 </LinearLayout>
