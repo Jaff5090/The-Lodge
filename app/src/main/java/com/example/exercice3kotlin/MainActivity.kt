@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
     }
     // send Information of main activity to quiz activity
     private fun SendDataToActivity(name: String, email: String, birthdate: String) {
-        val intent = Intent(this, ResultQuizz::class.java)
+        val intent = Intent(this, SecondActivity::class.java)
         intent.putExtra("NAME", name)
         intent.putExtra("EMAIL", email)
         intent.putExtra("BIRTHDATE", birthdate)

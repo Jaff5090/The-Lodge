@@ -17,7 +17,7 @@ class SecondActivity : AppCompatActivity() {
 
     private var currentQuestion = 0
 
-    class Question(val text: String, val options: List<String>,  val answer: String, val correction:String)
+    class Question(val text: String, val options: List<String>,  val answer: String)
     private val questions = listOf(
         Question("What is the capital of France?", listOf("Paris", "London", "Berlin", "Rome"),"Paris"),
         Question("What is the largest planet in our solar system?", listOf("Jupiter", "Saturn", "Uranus", "Mars"), "Jupiter"),
