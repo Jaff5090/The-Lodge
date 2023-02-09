@@ -17,8 +17,6 @@ En général, cette application offre une expérience conviviale pour les utilis
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.7.21-blue.svg)](http://kotlinlang.org)
 ![Language](https://img.shields.io/github/languages/top/cortinico/kotlin-android-template?color=blue&logo=kotlin)
 
-* V1 (27/01/2023) ![gickr com _2016cc32-2f30-b674-196b-d011755ed0dc](https://user-images.githubusercontent.com/57988602/217785490-4a263666-047d-40a5-aa1e-4f3a97b9d629.gif) 
-
 
 
 
