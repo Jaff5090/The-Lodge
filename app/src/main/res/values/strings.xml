@@ -1,10 +1,10 @@
 <resources>
 
-    <string name="app_name">My First Kotlin Project </string>
+    <string name="app_name">The Lodge </string>
     <string name="first_name_and_last_name" translatable="false">FirstName LastName</string>
-    <string name="name_label" translatable="false">Enter your Firstname and Lastname</string>
+    <string name="name_label" translatable="false">Entrer votre Nom and Prenom</string>
 
-    <string name="title_home" translatable="false">Home</string>
+    <string name="title_quiz" translatable="false">Quiz</string>
     <string name="title_dashboard" translatable="false">Dashboard</string>
     <string name="title_notifications" translatable="false">Notifications</string>
     <string name="title_activity_bottom_navigations" translatable="false">BottomNavigations</string>
@@ -15,6 +15,8 @@
     <string name="todo" translatable="false"> Todo </string>
     <string name="meteo" translatable="false">Méteo</string>
     <string name="quizz" translatable="false">GO to Quizz</string>
+    <string name="title_activity_navigations">Navigations</string>
+    <string name="heloooooooooooooooooooooooo">heloooooooooooooooooooooooo</string>
 
 
 </resources>

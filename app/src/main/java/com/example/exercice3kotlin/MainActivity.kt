@@ -1,71 +1,61 @@
 package com.example.exercice3kotlin
 
-import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.content.Intent
+import android.graphics.Color.green
+import android.graphics.Color.red
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
+import android.view.Gravity
+import android.view.ViewGroup
 import android.widget.*
+import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.core.content.ContextCompat
+import com.example.exercice3kotlin.databinding.ActivityMainBinding
 import java.text.SimpleDateFormat
 import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var nameEditText: EditText
-    private lateinit var emailEditText: EditText
-    private lateinit var birthdateEditText: EditText
-    @SuppressLint("MissingInflatedId")
+    lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val button = findViewById<Button>(R.id.Btnnext)
-        val datePickerButton = findViewById<ImageButton>(R.id.datePickerButton)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        nameEditText = findViewById(R.id.inputName)
-        emailEditText = findViewById(R.id.inputEmail)
-        birthdateEditText = findViewById(R.id.birthday)
-
-
-
-        datePickerButton.setOnClickListener {
+        binding.datePickerButton.setOnClickListener {
             showDatePicker()
         }
 
-        button.setOnClickListener {
-            // execute code when bottom is clicked
-            val name = nameEditText.text.toString()
-            val email = emailEditText.text.toString()
-            val birthdate = birthdateEditText.text.toString()
+        binding.Btnnext.setOnClickListener {
+            val name = binding.inputName.text.toString()
+            val email = binding.inputEmail.text.toString()
+            val birthdate = binding.birthday.text.toString()
             SendDataToActivity(name, email, birthdate)
-            Toast.makeText(this, "Le bouton a été cliqué!", Toast.LENGTH_SHORT).show()
-
+            val intent = Intent(this, ThemesOfQueezActivity::class.java)
+            intent.putExtra("NAME", name)
+            intent.putExtra("EMAIL", email)
+            intent.putExtra("BIRTHDATE", birthdate)
+            startActivity(intent)
+            Toast.makeText(this, "Button clicked!", Toast.LENGTH_SHORT).show()
         }
-
-
-
-
-
-
     }
-    // send Information of main activity to quiz activity
+
     private fun SendDataToActivity(name: String, email: String, birthdate: String) {
-        val intent = Intent(this, SecondActivity::class.java)
+        val intent = Intent(this, ThemesOfQueezActivity::class.java)
         intent.putExtra("NAME", name)
         intent.putExtra("EMAIL", email)
         intent.putExtra("BIRTHDATE", birthdate)
         startActivity(intent)
     }
 
-    ////
     private var selectedDate: Calendar = Calendar.getInstance()
-    //show dialog if i set button Image
     private fun showDatePicker() {
         val datePickerDialog = DatePickerDialog(
             this,
-            androidx.constraintlayout.widget.R.style.Theme_AppCompat_Light_Dialog,
+            androidx.appcompat.R.style.Theme_AppCompat_Light_Dialog,
             dateSetListener,
             selectedDate.get(Calendar.YEAR),
             selectedDate.get(Calendar.MONTH),
@@ -73,6 +63,7 @@ class MainActivity : AppCompatActivity() {
         )
         datePickerDialog.show()
     }
+
 
 
     ////set date into TextView
@@ -85,35 +76,7 @@ class MainActivity : AppCompatActivity() {
         val dateTextView = findViewById<TextView>(R.id.birthday)
         val format = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
         dateTextView.text = format.format(selectedDate.time)
-
-
-    }
-
-
-
-    override fun onStart() {
-        super.onStart()
-        Log.i("start Activity ", "activity starting ")
-
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.i("start Activity ", "hello")
-    }
-
-    override fun onResume() {
-        super.onResume()
-    }
-
-    override fun onStop() {
-        super.onStop()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-    }
-}
+}}
 
 
 

@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/root_layout"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context=".HomeActivity">
+    tools:context=".ThemesOfQueezActivity">
 
     <LinearLayout
         android:id="@+id/navbar"
-        android:elevation="16dp"
+        android:elevation="24dp"
+        android:background="@color/background"
+        app:cardUseCompatPadding="true"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_marginLeft="5dp"
+
+            android:layout_marginLeft="10dp"
             android:textStyle="italic|bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/nometprenom"
+            android:id="@+id/setName"
             android:textColor="@color/black"
             android:text="hazifohazoi"
             android:layout_gravity="center"/>
@@ -34,45 +35,60 @@
             android:textStyle="italic|bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/birthday"
+            android:id="@+id/setBirthday"
             android:textColor="@color/black"
-            android:text="kahkafzhkafh"
             android:layout_gravity="center"/>
+
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1"/>
-
-
         <ImageButton
+            android:id="@+id/ButtomItems"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_power_settings_new_24"
+            android:src="@drawable/ic_baseline_settings_24"
             android:layout_gravity="center"
-            android:background="@color/white"
-            android:layout_marginRight="5dp"/>
+            android:background="@color/background"
+            android:layout_marginRight="10dp"/>
+
+
+
+
+
     </LinearLayout>
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/view_pager"
-        android:layout_below="@+id/navbar"
+    <!--  <LinearLayout
+        android:layout_width=""
+        android:layout_height="" -->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvThemeQuiz"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_above="@+id/bottom_bar" />
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/navbar"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        android:padding="10dp" />
 
-    <nl.joery.animatedbottombar.AnimatedBottomBar
-        android:id="@+id/bottom_bar"
+    <RelativeLayout
+        android:elevation="0dp"
+        app:cardUseCompatPadding="true"
+        android:background="@color/background"
+        android:id="@+id/footer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFF"
-        android:elevation="16dp"
-        android:layout_alignParentBottom="true"
-        app:abb_tabs="@menu/menu_tabs"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+
+
+
+    </RelativeLayout>
+
+
 
 </RelativeLayout>
