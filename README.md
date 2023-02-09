@@ -8,6 +8,9 @@ Lors de la prise de questionnaire, l'utilisateur reçoit un score basé sur le n
 
 En général, cette application offre une expérience conviviale pour les utilisateurs qui souhaitent prendre des questionnaires sur des sujets variés.
 
+![OS](https://badgen.net/badge/OS/Android?icon=https://raw.githubusercontent.com/androiddevnotes/awesome-android-kotlin-apps/master/assets/android.svg&color=3ddc84)
+[![Kotlin](https://img.shields.io/badge/Kotlin-1.7.21-blue.svg)](http://kotlinlang.org)
+![Language](https://img.shields.io/github/languages/top/cortinico/kotlin-android-template?color=blue&logo=kotlin)
 
 
 
