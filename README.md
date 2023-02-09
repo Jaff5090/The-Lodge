@@ -6,13 +6,13 @@
 ![](./ezgif-5-1de0738a82.gif)
 
 # The Lodge  :
-L'application Questionnaire pour Android développée en Kotlin utilise une activité d'accueil pour permettre à l'utilisateur de s'enregistrer. Après l'inscription, l'utilisateur peut utiliser un Recycler View pour choisir le thème du questionnaire.
+The Questionnaire application for Android developed in Kotlin uses a welcome activity to allow the user to register. After registration, the user can use a Recycler View to choose the quiz topic.
 
-Une fois le thème choisi, l'utilisateur accède à un questionnaire à l'aide d'une navigation par onglets en bas de l'écran. Ce questionnaire comporte deux fragments différents pour les questions et les réponses.
+Once the theme has been chosen, the user accesses a questionnaire using navigation by tabs at the bottom of the screen. This questionnaire has two different fragments for questions and answers.
 
-Lors de la prise de questionnaire, l'utilisateur reçoit un score basé sur le nombre de questions correctement répondues. Ce score peut être affiché à l'aide d'une barre de progression ou d'un pourcentage.
+When taking a quiz, the user receives a score based on the number of questions answered correctly. This score can be displayed using a progress bar or a percentage.
 
-En général, cette application offre une expérience conviviale pour les utilisateurs qui souhaitent prendre des questionnaires sur des sujets variés.
+In general, this app provides a user-friendly experience for users who want to take quizzes on various topics.
 
 # Getting started  :
 This is an Android project made with Kotlin language.
@@ -24,16 +24,21 @@ This is an Android project made with Kotlin language.
    ```sh
    git clone https://github.com/Jaff5090/The-Lodge-.git
    ```
+   
+# Dependencies: 
 
-## Prerequisites: 
+## Libraries
+
+
+
+
+
+# contact: 
 
 * BENHSSAN Jaafar  : https://www.linkedin.com/in/jaafar-benhssan-781328195/
 * Abdoularaman Kamara  : https://www.linkedin.com/in/kamara-abdulrahman-906438200/  
 
-github: [octocat, surftocat]
-patreon: octocat
-tidelift: npm/octo-package
-custom: ["https://www.paypal.me/octocat", octocat.com]
+
 
 
 
