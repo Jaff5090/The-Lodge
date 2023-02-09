@@ -1,8 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Exercice3kotlin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="AppNameWhite" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <!-- Primary brand color. -->
+        <item name="android:fontFamily">@font/roboto_italic</item>
         <item name="colorPrimary">@color/mon_logo_background</item>
+
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -11,12 +13,12 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/white</item>
-        <item name="android:actionBarStyle">@style/MyActionBar</item>
+
 
 
         <!-- Customize your theme here. -->
     </style>
 
 
-    <style name="MyActionBar"></style>
+
 </resources>

@@ -9,5 +9,7 @@ task clean(type:Delete){
 }
 ext{
     consLayoutVersion ='2.1.4'
+    supportLibVersion = '28.0.0'
+
 }
 

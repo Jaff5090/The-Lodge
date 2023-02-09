@@ -3,33 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-
     android:orientation="horizontal"
-
     tools:context=".MainActivity">
 
-   <com.google.android.material.bottomnavigation.BottomNavigationView
-       android:id="@+id/navigation"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_alignParentBottom="false"
-
-       android:layout_marginStart="5dp"
-       android:layout_marginTop="5dp"
-       android:layout_marginEnd="5dp"
-       android:layout_marginBottom="5dp"
-       android:background="?android:attr/windowBackground"
-       app:menu="@menu/menu"/>
-
    <ImageView
-       android:layout_below="@+id/navigation"
-      android:id="@+id/logo"
+       android:id="@+id/logo"
        android:layout_width="150dp"
        android:layout_marginTop="30dp"
        android:layout_height="150dp"
-      android:src="@drawable/logofirst"
-      android:layout_centerHorizontal="true"/>
+       android:src="@drawable/mylogo"
+       android:layout_centerHorizontal="true"
+       android:contentDescription="TODO"
+       tools:ignore="ContentDescription" />
 
    <LinearLayout
 
@@ -49,18 +34,18 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_marginStart="10dp"
-          android:text="@string/nom_et_pr_nom"
-          android:textColor="@color/black"
+          android:text="@string/first_name_and_last_name"
           android:textSize="18sp"
           android:textStyle="bold|italic" />
 
       <EditText
+          android:id="@+id/inputName"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_marginStart="10dp"
-
           android:hint="@string/name_label"
-          android:inputType="text" />
+          android:inputType="text"
+          android:minHeight="48dp" />
 
       <View
           android:layout_width="wrap_content"
@@ -72,16 +57,17 @@
           android:layout_marginStart="10dp"
           android:layout_marginBottom="10dp"
           android:text="Email"
-          android:textColor="@color/black"
           android:textSize="18sp"
           android:textStyle="bold|italic" />
 
       <EditText
+          android:id="@+id/inputEmail"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_marginStart="10dp"
-          android:hint="taper votre nom et prénom"
-          android:inputType="textEmailAddress" />
+          android:hint="Taper votre email"
+          android:inputType="textEmailAddress"
+          android:minHeight="48dp" />
 
       <View
           android:layout_width="wrap_content"
@@ -93,7 +79,6 @@
           android:layout_marginStart="10dp"
 
           android:text="Date de naissance "
-          android:textColor="@color/black"
           android:textSize="18sp"
           android:textStyle="bold|italic" />
 
@@ -108,7 +93,8 @@
              android:layout_height="wrap_content"
              android:layout_marginStart="10dp"
              android:layout_marginTop="10dp"
-             android:hint="Enter your birthday" />
+             android:hint="naissance"
+             android:minHeight="48dp" />
 
          <ImageButton
              android:id="@+id/datePickerButton"
@@ -132,11 +118,9 @@
           android:layout_marginTop="10dp"
           android:layout_marginEnd="10dp"
           android:layout_marginBottom="10dp"
-          android:background="@color/teal_200"
-          android:backgroundTint="@color/black"
+          android:background="@color/color_buttons"
           android:gravity="center"
-          android:onClick="onSubmitClicked"
-          android:text="next"
+          android:text="@string/quizz"
           android:textColor="@android:color/white"
           android:textSize="18sp"
           android:textStyle="bold" />

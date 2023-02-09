@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"The Lodge"</string>
+    <string name="first_name_and_last_name" >Nom et prenom</string>
+    <string name="name_label" >Entrer votre Nom and Prenom</string>
+
+</resources>

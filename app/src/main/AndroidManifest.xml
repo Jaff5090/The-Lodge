@@ -10,15 +10,60 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/monlogo_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Exercice3kotlin"
+        android:theme="@style/AppNameWhite"
         tools:targetApi="31">
         <activity
-            android:name=".SecondActivity"
+            android:name=".SettingsActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name=".Navigations"
+            android:exported="true"
+            android:label="@string/title_activity_navigations">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Home"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ResultQuizz"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ThemesOfQueezActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <!--
+activity
+            android:name=".SecondActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity
+        -->
         <activity
             android:name=".MainActivity"
             android:exported="true">

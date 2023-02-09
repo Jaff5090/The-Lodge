@@ -1,62 +1,70 @@
 package com.example.exercice3kotlin
 
-import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.content.Intent
+import android.graphics.Color.green
+import android.graphics.Color.red
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.view.Gravity
+import android.view.ViewGroup
 import android.widget.*
+import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.core.content.ContextCompat
+import com.example.exercice3kotlin.databinding.ActivityMainBinding
 import java.text.SimpleDateFormat
 import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var binding: ActivityMainBinding
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val button = findViewById<Button>(R.id.Btnnext)
-        val intent = Intent(this, SecondActivity::class.java)
-        val datePickerButton = findViewById<ImageButton>(R.id.datePickerButton)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-
-
-        datePickerButton.setOnClickListener {
+        binding.datePickerButton.setOnClickListener {
             showDatePicker()
         }
 
-        button.setOnClickListener {
-            // Code à exécuter lorsque le bouton est cliqué
-            Toast.makeText(this, "Le bouton a été cliqué!", Toast.LENGTH_SHORT).show()
+        binding.Btnnext.setOnClickListener {
+            val name = binding.inputName.text.toString()
+            val email = binding.inputEmail.text.toString()
+            val birthdate = binding.birthday.text.toString()
+            SendDataToActivity(name, email, birthdate)
+            val intent = Intent(this, ThemesOfQueezActivity::class.java)
+            intent.putExtra("NAME", name)
+            intent.putExtra("EMAIL", email)
+            intent.putExtra("BIRTHDATE", birthdate)
             startActivity(intent)
+            Toast.makeText(this, "Button clicked!", Toast.LENGTH_SHORT).show()
         }
-
-
-
-
     }
 
-    ////
-    private var selectedDate: Calendar = Calendar.getInstance()
-    //show dialog if i set button Image
-    private fun showDatePicker() {
+    private fun SendDataToActivity(name: String, email: String, birthdate: String) {
+        val intent = Intent(this, ThemesOfQueezActivity::class.java)
+        intent.putExtra("NAME", name)
+        intent.putExtra("EMAIL", email)
+        intent.putExtra("BIRTHDATE", birthdate)
+        startActivity(intent)
+    }
 
+    private var selectedDate: Calendar = Calendar.getInstance()
+    private fun showDatePicker() {
         val datePickerDialog = DatePickerDialog(
             this,
-            androidx.constraintlayout.widget.R.style.ThemeOverlay_AppCompat_Dialog,
+            androidx.appcompat.R.style.Theme_AppCompat_Light_Dialog,
             dateSetListener,
             selectedDate.get(Calendar.YEAR),
             selectedDate.get(Calendar.MONTH),
             selectedDate.get(Calendar.DAY_OF_MONTH)
         )
-
-
-        datePickerDialog.datePicker.minDate = System.currentTimeMillis() - 1000
         datePickerDialog.show()
     }
+
+
 
     ////set date into TextView
     private val dateSetListener = DatePickerDialog.OnDateSetListener { _, year, month, day ->
@@ -68,35 +76,9 @@ class MainActivity : AppCompatActivity() {
         val dateTextView = findViewById<TextView>(R.id.birthday)
         val format = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
         dateTextView.text = format.format(selectedDate.time)
+}}
 
 
-    }
-
-
-
-    override fun onStart() {
-        super.onStart()
-        Log.i("start Activity ", "activity starting ")
-
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.i("start Activity ", "hello")
-    }
-
-    override fun onResume() {
-        super.onResume()
-    }
-
-    override fun onStop() {
-        super.onStop()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-    }
-}
 
 
 
