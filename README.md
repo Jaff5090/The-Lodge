@@ -19,7 +19,7 @@ En général, cette application offre une expérience conviviale pour les utilis
 
 
 ##Prerequisites: 
-Install Android Studio, creer un nouveau project *Project from version control*
+
 * BENHSSAN Jaafar  : https://www.linkedin.com/in/jaafar-benhssan-781328195/
 * Abdoularaman Kamara  : https://www.linkedin.com/in/kamara-abdulrahman-906438200/  ## Getting Started This is an _Android_ project made with _Kotlin_ language. ### Prerequisites Install [Android Studio](https://developer.android.com/studio). ### Installation 1. Clone the repo
    ```sh
