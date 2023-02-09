@@ -1,11 +1,11 @@
 ![OS](https://badgen.net/badge/OS/Android?icon=https://raw.githubusercontent.com/androiddevnotes/awesome-android-kotlin-apps/master/assets/android.svg&color=3ddc84)
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.7.21-blue.svg)](http://kotlinlang.org)
 ![Language](https://img.shields.io/github/languages/top/cortinico/kotlin-android-template?color=blue&logo=kotlin)
-## Basic UI
+# Basic UI
 
 ![](./ezgif-5-1de0738a82.gif)
 
-## The Lodge  :
+# The Lodge  :
 L'application Questionnaire pour Android développée en Kotlin utilise une activité d'accueil pour permettre à l'utilisateur de s'enregistrer. Après l'inscription, l'utilisateur peut utiliser un Recycler View pour choisir le thème du questionnaire.
 
 Une fois le thème choisi, l'utilisateur accède à un questionnaire à l'aide d'une navigation par onglets en bas de l'écran. Ce questionnaire comporte deux fragments différents pour les questions et les réponses.
