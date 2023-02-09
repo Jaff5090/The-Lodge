@@ -17,6 +17,7 @@
     <string name="quizz" translatable="false">GO to Quizz</string>
     <string name="title_activity_navigations">Navigations</string>
     <string name="heloooooooooooooooooooooooo">heloooooooooooooooooooooooo</string>
+    <string name="submit">Submit</string>
 
 
 </resources>

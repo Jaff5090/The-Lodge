@@ -13,7 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:text="Question goes here"
         android:textSize="30sp"
         android:layout_margin="20dp" />
 
@@ -36,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
             android:gravity="center"
-            android:text="Submit" />
+            android:text="@string/submit" />
 
     </LinearLayout>
 

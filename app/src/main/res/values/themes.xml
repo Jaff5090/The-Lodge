@@ -18,6 +18,10 @@
 
         <!-- Customize your theme here. -->
     </style>
+    <style name="MyCustomDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:background">#7B7B7B</item>
+    </style>
+
 
 
 

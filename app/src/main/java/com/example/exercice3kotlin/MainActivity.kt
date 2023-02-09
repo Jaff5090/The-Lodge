@@ -2,15 +2,9 @@ package com.example.exercice3kotlin
 
 import android.app.DatePickerDialog
 import android.content.Intent
-import android.graphics.Color.green
-import android.graphics.Color.red
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
-import android.view.ViewGroup
 import android.widget.*
-import androidx.core.content.ContentProviderCompat.requireContext
-import androidx.core.content.ContextCompat
 import com.example.exercice3kotlin.databinding.ActivityMainBinding
 import java.text.SimpleDateFormat
 import java.util.*
@@ -55,12 +49,13 @@ class MainActivity : AppCompatActivity() {
     private fun showDatePicker() {
         val datePickerDialog = DatePickerDialog(
             this,
-            androidx.appcompat.R.style.Theme_AppCompat_Light_Dialog,
+            R.style.MyCustomDialogStyle,
             dateSetListener,
             selectedDate.get(Calendar.YEAR),
             selectedDate.get(Calendar.MONTH),
             selectedDate.get(Calendar.DAY_OF_MONTH)
         )
+
         datePickerDialog.show()
     }
 
