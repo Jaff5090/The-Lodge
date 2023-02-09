@@ -33,6 +33,8 @@ This is an Android project made with Kotlin language.
 * BENHSSAN Jaafar  : https://www.linkedin.com/in/jaafar-benhssan-781328195/
 * Abdoularaman Kamara  : https://www.linkedin.com/in/kamara-abdulrahman-906438200/  
 
+[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+
 
 
 
