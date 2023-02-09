@@ -19,6 +19,8 @@ This is an Android project made with Kotlin language.
  . 
  ### Installation 1. Clone the repo
  Install [Android Studio](https://developer.android.com/studio) and create a new Project From Version Control and paste clone.
+ 
+ 
    ```sh
    git clone https://github.com/Drunkinator/DevMobile
    ```
