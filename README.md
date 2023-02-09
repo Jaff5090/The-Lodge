@@ -6,9 +6,9 @@
 ![](./ezgif-5-1de0738a82.gif)
 
 # The Lodge  :
-The Android application developed in Kotlin, called the The Lodge, uses a welcome activity to enable the user to sign up. After the registration process is complete, the user can use a [Recycler View](https://developer.android.com/studio](https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView) to select the quiz's subject matter.
+The Android application developed in Kotlin, called the The Lodge, uses a welcome activity to enable the user to sign up. After the registration process is complete, the user can use a [Recycler View] (https://developer.android.com/reference/kotlin/androidx/recyclerview/widget/RecyclerView) to select the quiz's subject matter.
 
-Upon choosing the theme, the user navigates to the questionnaire through tabs located at [the bottom of the screen (https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView). The questionnaire is divided into two separate fragments for questions and answers.
+Upon choosing the theme, the user navigates to the questionnaire through tabs located at [the bottom of the screen] (https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView). The questionnaire is divided into two separate fragments for questions and answers.
 
 When participating in the quiz, the user will receive a score based on the number of correctly answered questions. This score can be represented using a progress bar or expressed as a percentage.
 
