@@ -22,7 +22,7 @@ This is an Android project made with Kotlin language.
  
  
    ```sh
-   git clone https://github.com/Drunkinator/DevMobile
+   git clone https://github.com/Jaff5090/The-Lodge-.git
    ```
 
 
