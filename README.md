@@ -13,8 +13,8 @@ En général, cette application offre une expérience conviviale pour les utilis
 ![Language](https://img.shields.io/github/languages/top/cortinico/kotlin-android-template?color=blue&logo=kotlin)
 
 ## Table of Content<ul><li><a href="#contributors">Contributors</a></li><li><a href="#getting-started">Getting Started</a><ul><li><a href="#prerequisites">Prerequisites</a></li><li><a href="#installation">Installation</a></li></ul></li><li><a href="#versions">Versions</a></li><li><a href="#evolutions">Evolutions</a></li><li><a href="#contributing">Contributing</a></li><li><a href="#roadmap">Roadmap</a></li></ul> ## Contributors
-* ZIANE Akli : https://www.linkedin.com/in/akli-ziane-009984223/
-* DE GARAM Yoann : https://www.linkedin.com/in/yoann-d-32b377106/ ## Getting Started This is an _Android_ project made with _Kotlin_ language. ### Prerequisites Install [Android Studio](https://developer.android.com/studio). ### Installation 1. Clone the repo
+* BENHSSAN Jaafar  : https://www.linkedin.com/in/akli-ziane-009984223/
+* Abdoularaman Kamara  : https://www.linkedin.com/in/yoann-d-32b377106/ ## Getting Started This is an _Android_ project made with _Kotlin_ language. ### Prerequisites Install [Android Studio](https://developer.android.com/studio). ### Installation 1. Clone the repo
    ```sh
    git clone https://github.com/Drunkinator/DevMobile
    ```
