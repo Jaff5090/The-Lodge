@@ -1,4 +1,4 @@
-#Bonjour 👋
+# Bonjour 👋
 ## The Lodge  :
 L'application Questionnaire pour Android développée en Kotlin utilise une activité d'accueil pour permettre à l'utilisateur de s'enregistrer. Après l'inscription, l'utilisateur peut utiliser un Recycler View pour choisir le thème du questionnaire.
 
