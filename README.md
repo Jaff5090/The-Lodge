@@ -25,15 +25,15 @@ This is an Android project made with Kotlin language.
    git clone https://github.com/Jaff5090/The-Lodge-.git
    ```
 
-
-
-
 ## Prerequisites: 
 
 * BENHSSAN Jaafar  : https://www.linkedin.com/in/jaafar-benhssan-781328195/
 * Abdoularaman Kamara  : https://www.linkedin.com/in/kamara-abdulrahman-906438200/  
 
-[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+github: [octocat, surftocat]
+patreon: octocat
+tidelift: npm/octo-package
+custom: ["https://www.paypal.me/octocat", octocat.com]
 
 
 
