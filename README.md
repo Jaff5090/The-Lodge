@@ -16,8 +16,9 @@ En général, cette application offre une expérience conviviale pour les utilis
 
 # Getting started  :
 This is an Android project made with Kotlin language.
- ### Prerequisites Install [Android Studio](https://developer.android.com/studio). 
+ . 
  ### Installation 1. Clone the repo
+ Install [Android Studio](https://developer.android.com/studio)
    ```sh
    git clone https://github.com/Drunkinator/DevMobile
    ```
