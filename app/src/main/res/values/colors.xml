@@ -5,12 +5,26 @@
     <color name="teal_200">#C7AC00</color>
     <color name="teal_700">#B47811</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white">#C7AC00</color>
     <color name="gray_1">#B1B4B3</color>
     <color name="gray">#ACAAAA</color>
     <color name="background">#FCFCFC</color>
     <color name="red">#FF0000</color>
     <color name="green">#0FFF00</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+
+    <color name="transparent">#00000000</color>
+
+
+    <color name="thunderstorm">#1361FD</color>
+    <color name="drizzle">#526FA8</color>
+    <color name="rain">#0E8EFF</color>
+    <color name="snow">#987CFF</color>
+    <color name="atmosphere">#A8B4CC</color>
+    <color name="clear">#FF9D6F</color>
+    <color name="clouds">#454A4C</color>
 
 
 

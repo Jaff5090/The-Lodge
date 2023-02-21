@@ -1,6 +1,8 @@
 package com.example.exercice3kotlin.ui.quiz
 
 import android.content.Intent
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.graphics.Color.green
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -19,6 +21,7 @@ class quizFragment : Fragment() {
     private lateinit var optionsRadioGroup: RadioGroup
     private lateinit var submitButton: Button
 
+
     private var currentQuestion = 0
 
     class Question(val text: String, val options: List<String>, val answer: String)
@@ -36,23 +39,35 @@ class quizFragment : Fragment() {
     )
 
     private lateinit var binding: FragmentHomeBinding
+    private lateinit var optionsLinearLayout: LinearLayout
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         questionTextView = binding.questionTextView
-        optionsRadioGroup = binding.optionsRadioGroup
+        optionsLinearLayout = binding.optionsLinearLayout
         submitButton = binding.submitButton
 
         nextQuestion()
 
         submitButton.setOnClickListener {
-            val selectedOption = optionsRadioGroup.findViewById<RadioButton>(optionsRadioGroup.checkedRadioButtonId)
+            var selectedOption: String? = null
+            for (i in 0 until optionsLinearLayout.childCount) {
+                val view = optionsLinearLayout.getChildAt(i)
+                if (view is RelativeLayout) {
+                    val optionTextView = view.getChildAt(0) as TextView
+                    if (view.backgroundTintList == ColorStateList.valueOf(Color.GREEN)) {
+                        selectedOption = optionTextView.text.toString()
+                        break
+                    }
+                }
+            }
             val answer = questions[currentQuestion].answer
-            if (selectedOption?.text == answer) {
+            if (selectedOption == answer) {
                 Toast.makeText(requireContext(), "Correct Answer!", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(requireContext(), "Incorrect Answer!", Toast.LENGTH_SHORT).show()
@@ -73,12 +88,18 @@ class quizFragment : Fragment() {
 
     private fun nextQuestion() {
         questionTextView.text = questions[currentQuestion].text
-        optionsRadioGroup.removeAllViews()
+        optionsLinearLayout.removeAllViews()
         for (i in 0 until questions[currentQuestion].options.size) {
-            val radioButton = RadioButton(requireContext())
-            radioButton.text = questions[currentQuestion].options[i]
-            radioButton.setPadding(10, 10, 10, 10)
-            optionsRadioGroup.addView(radioButton)
+            val optionRelativeLayout = RelativeLayout(requireContext())
+            optionRelativeLayout.setBackgroundResource(R.drawable.rectangle)
+            optionRelativeLayout.setOnClickListener {
+                optionRelativeLayout.backgroundTintList = ColorStateList.valueOf(Color.GREEN)
+            }
+            val optionTextView = TextView(requireContext())
+            optionTextView.text = questions[currentQuestion].options[i]
+            optionTextView.setPadding(10, 10, 10, 10)
+            optionRelativeLayout.addView(optionTextView)
+            optionsLinearLayout.addView(optionRelativeLayout)
         }
     }
 }

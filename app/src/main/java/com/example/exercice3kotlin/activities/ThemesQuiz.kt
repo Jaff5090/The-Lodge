@@ -12,6 +12,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.exercice3kotlin.Navigations
 import com.example.exercice3kotlin.R
 import com.example.exercice3kotlin.adapter.ThemeQuizAdapter
 import com.example.exercice3kotlin.ui.quiz.QuizThemeViewModel

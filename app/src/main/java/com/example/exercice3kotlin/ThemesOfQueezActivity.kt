@@ -45,23 +45,29 @@ class ThemesOfQueezActivity : AppCompatActivity() {
         // ArrayList of class ItemsViewModel
         val data = ArrayList<QuizThemeViewModel>()
 
+        data.add(QuizThemeViewModel(R.drawable.animals,"Animals"));
+        data.add(QuizThemeViewModel(R.drawable.history,"History"));
+        data.add(QuizThemeViewModel(R.drawable.geogra,"Geography"));
+        data.add(QuizThemeViewModel(R.drawable.fruits,"fruits and vegetables"));
+
+
         // This loop will create 20 Views containing
         // the image with the count of view
-        for (i in 1..8) {
+       /* for (i in 1..8) {
             data.add(QuizThemeViewModel(R.drawable.ic_baseline_settings_24, "Item " + i))
-        }
+        }*/
 
         // This will pass the ArrayList to our Adapter
         val adapter = ThemeQuizAdapter(data)
 
         // Setting OnClickListener for the adapter
-        adapter.setOnClickListener(object : ThemeQuizAdapter.OnClickListener {
+       /* adapter.setOnClickListener(object : ThemeQuizAdapter.OnClickListener {
             override fun onClick(position: Int) {
                 val intent = Intent(this@ThemesOfQueezActivity, Navigations::class.java)
                 startActivity(intent)
             }
-        })
-        ButtomItems.setOnClickListener {
+        })*/
+        /**ButtomItems.setOnClickListener {
             val items = arrayOf("Themes quiz","account", "profile")
             val builder = AlertDialog.Builder(this)
 
@@ -89,7 +95,7 @@ class ThemesOfQueezActivity : AppCompatActivity() {
             window.attributes = params
 
             dialog.show()
-        }
+        }**/
 
 
 

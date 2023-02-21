@@ -1,49 +1,52 @@
+
+
 package com.example.exercice3kotlin.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.os.Looper
-import android.view.WindowManager
 import android.view.animation.Animation
 import android.view.animation.Transformation
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat.startActivity
+import androidx.databinding.DataBindingUtil
+import com.example.exercice3kotlin.MainActivity
 import com.example.exercice3kotlin.R
-
+import com.example.exercice3kotlin.databinding.ActivitySplashscreenBinding
 
 class SplashScreen : AppCompatActivity() {
-
+    private lateinit var logoView: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splashscreen)
+        logoView = findViewById(R.id.gifImageView)
 
+        val animation = LogoAnimation(logoView)
+        animation.duration = 2000
+        animation.repeatCount = Animation.INFINITE
 
-        // This is used to hide the status bar and make
-        // the splash screen as a full screen activity.
-        window.setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN
-        )
-
-        // we used the postDelayed(Runnable, time) method
-        // to send a message with a delayed time.
-        //Normal Handler is deprecated , so we have to change the code little bit
-
-        // Handler().postDelayed({
-        Handler(Looper.getMainLooper()).postDelayed({
+        logoView.startAnimation(animation)
+        Handler().postDelayed({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(0, 0)
             finish()
-        }, 3000)
+        }, 2000)
 
     }
 
 
 
+    class LogoAnimation(private val logoView: ImageView) : Animation() {
+        override fun applyTransformation(interpolatedTime: Float, t: Transformation?) {
+            super.applyTransformation(interpolatedTime, t)
 
+            t?.let {
+                it.matrix.setRotate(360f * interpolatedTime, logoView.width / 2f, logoView.height / 2f)
+            }
+        }
+    }
 
 }
-
-
