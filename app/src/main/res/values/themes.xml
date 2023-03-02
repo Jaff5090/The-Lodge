@@ -18,6 +18,12 @@
 
         <!-- Customize your theme here. -->
     </style>
+    <style name="MyCustomDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:background">#020202</item>
+        <item name="colorAccent">#C9A7820C</item>
+        <item name="android:textColorPrimary">@color/gray</item>
+        <item name="android:textColorSecondary">#000000</item>
+    </style>
 
 
 

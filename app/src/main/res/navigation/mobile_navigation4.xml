@@ -10,16 +10,17 @@
         android:name="com.example.exercice3kotlin.ui.quiz.quizFragment"
         android:label="@string/title_quiz"
         tools:layout="@layout/fragment_home" />
+    <argument
+        android:name="theme"
+        app:argType="string" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.example.exercice3kotlin.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
+    <argument
+        android:name="theme"
+        app:argType="string" />
 
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.exercice3kotlin.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
 </navigation>

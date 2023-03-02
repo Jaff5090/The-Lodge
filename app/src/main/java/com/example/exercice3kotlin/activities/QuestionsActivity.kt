@@ -13,8 +13,27 @@ class QuestionsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_questions)
         typeText = findViewById(R.id.textType)
-        val types = intent.getStringExtra("Type")
+        val types = intent.getStringExtra("themeName")
         typeText.text = types
 
+
+        /**if (types == "Theme1") {
+            // afficher le fragment pour le thème 1
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, Theme1Fragment())
+                .commit()
+        } else if (types == "Theme2") {
+            // afficher le fragment pour le thème 2
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, Theme2Fragment())
+                .commit()
+        } else {
+            // afficher le fragment par défaut
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, DefaultFragment())
+                .commit()
+        }**/
+
     }
+
 }

@@ -9,11 +9,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.*
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation.findNavController
 import com.example.exercice3kotlin.MainActivity
 import com.example.exercice3kotlin.R
+import com.example.exercice3kotlin.ThemesOfQueezActivity
 import com.example.exercice3kotlin.databinding.FragmentHomeBinding
 
 class quizFragment : Fragment() {
@@ -57,14 +60,7 @@ class quizFragment : Fragment() {
         submitButton.setOnClickListener {
             var selectedOption: String? = null
             for (i in 0 until optionsLinearLayout.childCount) {
-                val view = optionsLinearLayout.getChildAt(i)
-                if (view is RelativeLayout) {
-                    val optionTextView = view.getChildAt(0) as TextView
-                    if (view.backgroundTintList == ColorStateList.valueOf(Color.GREEN)) {
-                        selectedOption = optionTextView.text.toString()
-                        break
-                    }
-                }
+                // ...
             }
             val answer = questions[currentQuestion].answer
             if (selectedOption == answer) {
@@ -76,14 +72,53 @@ class quizFragment : Fragment() {
                 currentQuestion++
                 nextQuestion()
             } else {
-                val intent = Intent(activity, MainActivity::class.java)
-                startActivity(intent)
+                val score = calculateScore()
+                val dialogBuilder = AlertDialog.Builder(requireContext())
+                    .setTitle("Quiz Score")
+                    .setMessage("You scored $score out of ${questions.size}")
+                    .setPositiveButton("OK") { dialog, which ->
+                        // Navigate back to the MainActivity
+                        val navController = findNavController(requireView())
+                        navController.navigateUp()
+                    }
+                    .setNegativeButton("Retour") { dialog, which ->
+                        // Navigate back to the quiz themes activity
+                        val intent = Intent(activity, ThemesOfQueezActivity::class.java)
+                        startActivity(intent)
+                    }
+                dialogBuilder.create().show()
+
             }
         }
 
 
         return binding.root
     }
+    private fun calculateScore(): Int {
+        var score = 0
+        for (question in questions) {
+            val answer = question.answer
+            val selectedOption = getSelectedOption(question)
+            if (selectedOption == answer) {
+                score++
+            }
+        }
+        return score
+    }
+
+    private fun getSelectedOption(question: Question): String? {
+        for (i in 0 until optionsLinearLayout.childCount) {
+            val view = optionsLinearLayout.getChildAt(i)
+            if (view is RelativeLayout) {
+                val optionTextView = view.getChildAt(0) as TextView
+                if (view.backgroundTintList == ColorStateList.valueOf(Color.GREEN)) {
+                    return optionTextView.text.toString()
+                }
+            }
+        }
+        return null
+    }
+
 
 
     private fun nextQuestion() {
