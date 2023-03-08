@@ -9,11 +9,7 @@ import android.view.animation.Animation
 import android.view.animation.Transformation
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.startActivity
-import androidx.databinding.DataBindingUtil
-import com.example.exercice3kotlin.MainActivity
 import com.example.exercice3kotlin.R
-import com.example.exercice3kotlin.databinding.ActivitySplashscreenBinding
 
 class SplashScreen : AppCompatActivity() {
     private lateinit var logoView: ImageView

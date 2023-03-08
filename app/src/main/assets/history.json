@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Quelle est la date de la prise de la Bastille?",
+    "options": [
+      "14 juillet 1789",
+      "4 juillet 1776",
+      "9 novembre 1989",
+      "8 mai 1945"
+    ],
+    "answer": "14 juillet 1789"
+  },
+  {
+    "text": "Qui était le leader de l'Union Soviétique pendant la guerre froide?",
+    "options": [
+      "Mikhail Gorbatchev",
+      "Leonid Brejnev",
+      "Nikita Khrouchtchev",
+      "Joseph Staline"
+    ],
+    "answer": "Joseph Staline"
+  },
+  {
+    "text": "Quand a commencé la première guerre mondiale?",
+    "options": [
+      "1914",
+      "1939",
+      "1945",
+      "1917"
+    ],
+    "answer": "1914"
+  },
+  {
+    "text": "Qui a été l'empereur romain le plus célèbre?",
+    "options": [
+      "Auguste",
+      "Néron",
+      "Caligula",
+      "Jules César"
+    ],
+    "answer": "Jules César"
+  },
+  {
+    "text": "Quand a été signé le traité de Versailles?",
+    "options": [
+      "1919",
+      "1939",
+      "1945",
+      "1917"
+    ],
+    "answer": "1919"
+  },
+  {
+    "text": "Quelle est la date de la déclaration d'indépendance des Etats-Unis?",
+    "options": [
+      "4 juillet 1776",
+      "14 juillet 1789",
+      "9 novembre 1989",
+      "8 mai 1945"
+    ],
+    "answer": "4 juillet 1776"
+  },
+  {
+    "text": "Quelle est la date de la chute du Mur de Berlin?",
+    "options": [
+      "9 novembre 1989",
+      "4 juillet 1776",
+      "14 juillet 1789",
+      "8 mai 1945"
+    ],
+    "answer": "9 novembre 1989"
+  },
+  {
+    "text": "Quelle est la date de la fin de la seconde guerre mondiale en Europe?",
+    "options": [
+      "8 mai 1945",
+      "9 novembre 1989",
+      "4 juillet 1776",
+      "14 juillet 1789"
+    ],
+    "answer": "8 mai 1945"
+  }
+]

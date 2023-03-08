@@ -1,21 +1,15 @@
 package com.example.exercice3kotlin.adapter
 
 import android.content.Intent
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import androidx.navigation.Navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.exercice3kotlin.Navigations
-import com.example.exercice3kotlin.ui.quiz.QuizThemeViewModel
+import com.example.exercice3kotlin.activities.QuizThemeViewModel
 import com.example.exercice3kotlin.R
-import com.example.exercice3kotlin.ThemesOfQueezActivity
 import com.example.exercice3kotlin.activities.QuestionsActivity
-import com.example.exercice3kotlin.ui.quiz.quizFragment
 
 class ThemeQuizAdapter(private val mList: List<QuizThemeViewModel>) : RecyclerView.Adapter<ThemeQuizAdapter.ViewHolder>() {
     private lateinit var onClickListener: OnClickListener
@@ -42,7 +36,7 @@ class ThemeQuizAdapter(private val mList: List<QuizThemeViewModel>) : RecyclerVi
         holder.textView.text = ItemsViewModel.text
 
         holder.itemView.setOnClickListener {
-            val intent = Intent(holder.itemView.context, Navigations::class.java)
+            val intent = Intent(holder.itemView.context, QuestionsActivity::class.java)
             intent.putExtra("themeName", ItemsViewModel.themeName)
             holder.itemView.context.startActivity(intent)
         }

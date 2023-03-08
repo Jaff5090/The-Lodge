@@ -6,6 +6,10 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.exercice3kotlin.R
+import com.example.exercice3kotlin.fragmentsthemes.FragmentAnimals
+import com.example.exercice3kotlin.fragmentsthemes.Fragmenthistory
+import com.example.exercice3kotlin.fragmentsthemes.FruitVegetables
+import com.example.exercice3kotlin.fragmentsthemes.GeographyFragment
 
 class QuestionsActivity : AppCompatActivity() {
     private lateinit var typeText: TextView
@@ -17,22 +21,28 @@ class QuestionsActivity : AppCompatActivity() {
         typeText.text = types
 
 
-        /**if (types == "Theme1") {
+        if (types == "Animals") {
             // afficher le fragment pour le thème 1
             supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, Theme1Fragment())
+                .replace(R.id.container_fragment, FragmentAnimals())
                 .commit()
-        } else if (types == "Theme2") {
+        } else if (types == "History") {
             // afficher le fragment pour le thème 2
             supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, Theme2Fragment())
+                .replace(R.id.container_fragment, Fragmenthistory())
                 .commit()
-        } else {
+        } else if (types == "Geography"){
             // afficher le fragment par défaut
             supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, DefaultFragment())
+                .replace(R.id.container_fragment, GeographyFragment())
                 .commit()
-        }**/
+        } else if (types == "fruits and vegetables"){
+        // afficher le fragment par défaut
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.container_fragment, FruitVegetables())
+            .commit()
+    }
+
 
     }
 

@@ -9,7 +9,8 @@
     <color name="gray_1">#B1B4B3</color>
     <color name="gray">#ACAAAA</color>
     <color name="background">#FCFCFC</color>
-    <color name="red">#FF0000</color>
+    <color name="primary_color"> #456CFA
+    </color>
     <color name="green">#0FFF00</color>
 
     <color name="purple_200">#FFBB86FC</color>
