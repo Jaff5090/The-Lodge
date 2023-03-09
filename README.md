@@ -38,7 +38,7 @@ flask==1.1.2
 
 - [Kotlin](https://github.com/JetBrains/kotlin) -> A modern programming languagethat makes developers happier.
 - [Data Binding](https://developer.android.com/topic/libraries/data-binding) -> Support library that allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
-- [Preference](https://developer.android.com/guide/topics/ui/settings) -> Preference is the basic building block of the Preference Library
+- [Json](https://javadoc.org/artifact/com.google.code.gson/gson/2.9.0/) -> Preference is the basic building block of the Preference Library
 
 
 
