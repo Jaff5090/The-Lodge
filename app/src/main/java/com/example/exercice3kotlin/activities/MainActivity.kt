@@ -4,9 +4,13 @@ import android.app.DatePickerDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+<<<<<<< HEAD:app/src/main/java/com/example/exercice3kotlin/MainActivity.kt
+import android.widget.*
+=======
 import android.util.Log
 import android.widget.*
 import com.example.exercice3kotlin.R
+>>>>>>> 5c9b6bb5a126893dd07b08b0d5e58d0f107afd71:app/src/main/java/com/example/exercice3kotlin/activities/MainActivity.kt
 import com.example.exercice3kotlin.databinding.ActivityMainBinding
 import java.text.SimpleDateFormat
 import java.util.*
