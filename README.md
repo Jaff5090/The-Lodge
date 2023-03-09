@@ -3,7 +3,7 @@
 ![Language](https://img.shields.io/github/languages/top/cortinico/kotlin-android-template?color=blue&logo=kotlin)
 # Basic UI
 
-![](./ezgif.com-optimize.gif)
+![](./bloggif_6409fcd749ee0.gif)
 
 # The Lodge  :
 The Android application developed in Kotlin, called the The Lodge, uses a welcome activity to enable the user to sign up. After the registration process is complete, the user can use a Recycler View to select the quiz's subject matter.
