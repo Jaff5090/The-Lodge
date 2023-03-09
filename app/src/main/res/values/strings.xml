@@ -31,12 +31,6 @@
     <string name="quizz" translatable="false">GO to Quizz</string>
     <string name="title_activity_navigations">Navigations</string>
     <string name="heloooooooooooooooooooooooo">heloooooooooooooooooooooooo</string>
-<<<<<<< HEAD
-    <string name="submit">Submit</string>
-=======
-    <string name="title_activity_main">MainActivity</string>
-    <string name="title_home">Home</string>
->>>>>>> 5c9b6bb5a126893dd07b08b0d5e58d0f107afd71
 
 
 </resources>
