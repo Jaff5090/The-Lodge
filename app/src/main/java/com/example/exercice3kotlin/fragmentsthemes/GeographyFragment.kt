@@ -3,44 +3,33 @@ package com.example.exercice3kotlin.fragmentsthemes
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
 import com.example.exercice3kotlin.R
-import com.example.exercice3kotlin.ThemesOfQueezActivity
+import com.example.exercice3kotlin.activities.ThemesOfQueezActivity
 import com.example.exercice3kotlin.databinding.FragmentGeographyBinding
+import com.google.gson.Gson
 
 class GeographyFragment : Fragment() {
     private lateinit var questionTextView: TextView
-    private lateinit var optionsRadioGroup: RadioGroup
     private lateinit var submitButton: Button
+
     private var score = 0
-
-
     private var currentQuestion = 0
 
-    class Question(val text: String, val options: List<String>, val answer: String)
-    private val questions = listOf(
-        Question("Quelle est la capitale de la France?", listOf("Paris", "Londres", "Berlin", "Rome"), "Paris"),
-        Question("Quel est le plus grand planète dans notre système solaire?", listOf("Jupiter", "Saturne", "Uranus", "Mars"), "Jupiter"),
-        Question("Quel est le plus petit pays dans le monde?", listOf("Monaco", "Vatican", "Saint-Marin", "Nauru"), "Saint-Marin"),
-        Question("Quelle est la monnaie utilisée au Japon?", listOf("Yen", "Won", "Dollar", "Euro"), "Yen"),
-        Question("Quel est le plus haut montagne dans le monde?", listOf("Mont Everest", "K2", "Kangchenjunga", "Lhotse"), "Mont Everest"),
-        Question("Quel est le nom du plus long fleuve du monde?", listOf("Nil", "Amazone", "Yangtze", "Jaune"), "Nil"),
-        Question("Quel pays est la maison du grand récif de corail?", listOf("Australie", "Afrique du Sud", "Inde", "Brésil"), "Australie"),
-        Question("Quel est le nom du plus grand désert du monde?", listOf("Antarctique", "Sahara", "Gobi", "Kalahari"), "Sahara"),
-        Question("Quel est le nom de l'océan le plus grand du monde?", listOf("Pacifique", "Atlantique", "Indien", "Arctique"), "Pacifique"),
-        Question("Quel est le nom de la planète sur laquelle nous vivons?", listOf("Vénus", "Mars", "Terre", "Neptune"), "Terre")
-    )
 
     private lateinit var binding: FragmentGeographyBinding
     private lateinit var optionsLinearLayout: LinearLayout
+    class Question(val text: String, val options: List<String>, val answer: String)
+    private val questions = mutableListOf<Question>()
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -53,7 +42,19 @@ class GeographyFragment : Fragment() {
         optionsLinearLayout = binding.optionsLinearLayout
         submitButton = binding.submitButton
 
+
+        val jsonString = context?.assets?.open("geography.json")?.bufferedReader().use { it?.readText() }
+
+        if (!jsonString.isNullOrEmpty()) {
+            val gson = Gson()
+            questions.addAll(gson.fromJson(jsonString, Array<Question>::class.java).toList())
+        } else {
+            // gérer le cas où le fichier JSON est introuvable
+            Toast.makeText(requireContext(), "Fichier JSON introuvable!", Toast.LENGTH_SHORT).show()
+        }
+
         nextQuestion()
+
 
         submitButton.setOnClickListener {
             var selectedOption: String? = null
@@ -83,20 +84,19 @@ class GeographyFragment : Fragment() {
                 val dialogBuilder = AlertDialog.Builder(requireContext())
                     .setTitle("Quiz Score")
                     .setMessage("You scored $score out of ${questions.size}")
-                    .setPositiveButton("OK") { dialog, which ->
-                        // Navigate back to the MainActivity
-
+                    .setPositiveButton("OK") { _, _ ->
+                        // TODO :  Navigate back to the MainActivity
                     }
-                    .setNegativeButton("Retour") { dialog, which ->
-                        // Navigate back to the quiz themes activity
+                    .setNegativeButton("Retour") { _, _ ->
+                        // TODO : Navigate back to the quiz themes activity
                         val intent = Intent(activity, ThemesOfQueezActivity::class.java)
                         startActivity(intent)
                     }
                 dialogBuilder.create().show()
 
+
             }
         }
-
 
         return binding.root
     }
@@ -104,20 +104,9 @@ class GeographyFragment : Fragment() {
         return score
     }
 
-    private fun getSelectedOption(question: Question): String? {
-        for (i in 0 until optionsLinearLayout.childCount) {
-            val view = optionsLinearLayout.getChildAt(i)
-            if (view is RelativeLayout) {
-                val optionTextView = view.getChildAt(0) as TextView
-                if (view.backgroundTintList == ColorStateList.valueOf(Color.GREEN)) {
-                    return optionTextView.text.toString()
-                }
-            }
-        }
-        return null
-    }
 
 
+    private var selectedOptionRelativeLayout: RelativeLayout? = null
 
     private fun nextQuestion() {
         questionTextView.text = questions[currentQuestion].text
@@ -134,11 +123,13 @@ class GeographyFragment : Fragment() {
             optionRelativeLayout.layoutParams = params
             optionRelativeLayout.setBackgroundResource(R.drawable.rectangle)
             optionRelativeLayout.setOnClickListener {
-                optionRelativeLayout.backgroundTintList = ColorStateList.valueOf(Color.GREEN)
-                for (j in 0 until optionsLinearLayout.childCount) {
-                    val view = optionsLinearLayout.getChildAt(j)
-                    view.isClickable = false
+                if (selectedOptionRelativeLayout != null) {
+                    selectedOptionRelativeLayout?.backgroundTintList = ColorStateList.valueOf(
+                        ContextCompat.getColor(requireContext(), R.color.gray)
+                    )
                 }
+                optionRelativeLayout.backgroundTintList = ColorStateList.valueOf(Color.GREEN)
+                selectedOptionRelativeLayout = optionRelativeLayout
             }
             val optionTextView = TextView(requireContext())
             optionTextView.text = questions[currentQuestion].options[i]
@@ -147,4 +138,38 @@ class GeographyFragment : Fragment() {
             optionsLinearLayout.addView(optionRelativeLayout)
         }
     }
-}
+
+    override fun onStart() {
+        super.onStart()
+        Log.d("GeographyFragment", "onStart called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("GeographyFragment", "onResume called")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("GeographyFragment", "onPause called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("GeographyFragment", "onStop called")
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.d("GeographyFragment", "onDestroyView called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("GeographyFragment", "onDestroy called")
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        Log.d("GeographyFragment", "onDetach called")
+    }}

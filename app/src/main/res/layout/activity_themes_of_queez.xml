@@ -4,26 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThemesOfQueezActivity">
+    android:background="@drawable/backgroundsplashscreen"
+    tools:context=".activities.ThemesOfQueezActivity">
 
     <LinearLayout
         android:id="@+id/navbar"
-        android:elevation="24dp"
-        android:background="@color/background"
-        app:cardUseCompatPadding="true"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:elevation="24dp"
+        app:cardUseCompatPadding="true"
         android:orientation="horizontal">
 
         <TextView
-
-            android:layout_marginLeft="10dp"
-            android:textStyle="italic|bold"
+            android:id="@+id/setName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/setName"
-            android:textColor="@color/black"
-            android:text="hazifohazoi"
+            android:layout_marginStart="10dp"
+            android:textStyle="italic|bold"
+
+            android:textColor="#FFFF"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
             android:layout_gravity="center"/>
 
 
@@ -36,25 +37,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/setBirthday"
-            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+
+            android:textColor="#FFFF"
             android:layout_gravity="center"/>
 
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1"/>
-        <ImageButton
-            android:id="@+id/ButtomItems"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_settings_24"
-            android:layout_gravity="center"
-            android:background="@color/background"
-            android:layout_marginRight="10dp"/>
-
-
-
-
 
     </LinearLayout>
 
@@ -71,7 +63,7 @@
         android:layout_below="@+id/navbar"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:background="#456CFA"
+
         android:padding="10dp" />
 
     <RelativeLayout

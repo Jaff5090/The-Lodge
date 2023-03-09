@@ -58,35 +58,5 @@
         "Albatros"
       ],
       "answer": "Albatros"
-    },
-    {
-      "text": "Quel est l'animal qui peut survivre sans eau pendant des semaines?",
-      "options": [
-        "Chameau",
-        "Gazelle",
-        "Lapin",
-        "Kangourou"
-      ],
-      "answer": "Chameau"
-    },
-    {
-      "text": "Quel est l'animal qui peut dormir debout sur ses pattes arrière?",
-      "options": [
-        "Ours",
-        "Loup",
-        "Chien",
-        "Chat"
-      ],
-      "answer": "Chat"
-    },
-    {
-      "text": "Quel est l'animal le plus grand des mers?",
-      "options": [
-        "Baleine Bleue",
-        "Grand Requin Blanc",
-        "Orque",
-        "Dauphin"
-      ],
-      "answer": "Baleine Bleue"
     }
 ]

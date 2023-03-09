@@ -1,16 +1,30 @@
 <resources>
 
     <string name="app_name">The Lodge </string>
+    <string name="Quiz" translatable="false">Quiz </string>
+    <string name="First_Name" translatable="false">first name</string>
+    <string name="date_of_birth" translatable="false">Date of Birth</string>
+    <string name="let_s_start" translatable="false">let\'s start</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="quiz_theme_animals" translatable="false">Animals</string>
+    <string name="quiz_theme_history" translatable="false">History</string>
+    <string name="quiz_theme_geography" translatable="false">Geography</string>
+    <string name="quiz_theme_fruits_and_veggies" translatable="false">Fruits and Vegetables</string>
+
+    <string name="item" translatable="false">Item</string>
+    <string name="profile_image" translatable="false" />
+    <string name="the_lodge" translatable="false">The Lodge</string>
+    <string name="theme_of_quiz" translatable="false">Theme of Quiz</string>
+    <string name="edit_profile" translatable="false">Edit Profile</string>
+
+
     <string name="first_name_and_last_name" translatable="false">FirstName LastName</string>
     <string name="name_label" translatable="false">Entrer votre Nom and Prenom</string>
-
     <string name="title_quiz" translatable="false">Quiz</string>
     <string name="title_dashboard" translatable="false">Dashboard</string>
     <string name="title_notifications" translatable="false">Notifications</string>
     <string name="title_activity_bottom_navigations" translatable="false">BottomNavigations</string>
-
     <string name="actors" translatable="false">Which article is the most beautiful ?</string>
-
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="todo" translatable="false"> Todo </string>
     <string name="meteo" translatable="false">Méteo</string>

@@ -7,7 +7,7 @@
     android:background="@drawable/backgroundsplashscreen"
 
     android:orientation="vertical"
-    tools:context=".activities.activityHome">
+    tools:context=".activities.MainActivity">
 
    <androidx.cardview.widget.CardView
        android:layout_width="match_parent"
@@ -27,7 +27,7 @@
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:gravity="center"
-             android:text="Bienvenue"
+             android:text="@string/Quiz"
              android:textColor="#456CFA"
              android:textSize="30sp"
              android:textStyle="bold"/>
@@ -42,7 +42,7 @@
                 android:id="@+id/inputName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name"
+                android:hint="@string/First_Name"
                 android:textColor="#000000"
                 android:textColorHint="#000000"/>
          </com.google.android.material.textfield.TextInputLayout>
@@ -62,7 +62,7 @@
                    android:id="@+id/birthday"
                    android:layout_width="match_parent"
                    android:layout_height="wrap_content"
-                   android:hint="Date de naissance "
+                   android:hint="@string/date_of_birth"
                    android:textColor="#000000"
                    android:textColorHint="#000000" />
 
@@ -76,8 +76,8 @@
                 android:layout_gravity="center"
                 android:layout_margin="20dp"
                 android:background="@color/background"
-                android:contentDescription="date"
-                android:src="@drawable/calendar_foreground" />
+                android:src="@drawable/calendar_foreground"
+                tools:ignore="ContentDescription" />
 
          </LinearLayout>
 
@@ -89,7 +89,7 @@
              android:layout_height="wrap_content"
              android:layout_marginTop="16dp"
              android:background="#456CFA"
-             android:text="Commencer"
+             android:text="@string/let_s_start"
              android:textSize="18sp"
              android:textColor="@color/background"/>
       </LinearLayout>

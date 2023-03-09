@@ -3,18 +3,19 @@ package com.example.exercice3kotlin.fragmentsthemes
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
 import com.example.exercice3kotlin.R
-import com.example.exercice3kotlin.ThemesOfQueezActivity
+import com.example.exercice3kotlin.activities.ThemesOfQueezActivity
 import com.example.exercice3kotlin.databinding.FragmentFruitVegetablesBinding
+import com.google.gson.Gson
 
 class FruitVegetables : Fragment() {
     private lateinit var questionTextView: TextView
@@ -26,18 +27,8 @@ class FruitVegetables : Fragment() {
     private var currentQuestion = 0
 
     class Question(val text: String, val options: List<String>, val answer: String)
-    private val questions = listOf(
-        Question("Quel est le fruit le plus rouge?", listOf("Cerise", "Fraise", "Tomate", "Framboise"), "Cerise"),
-        Question("Quel est le légume le plus long?", listOf("Concombre", "Carotte", "Aubergine", "Poivron"), "Concombre"),
-        Question("Quel est le fruit le plus acide?", listOf("Pomme", "Citron", "Orange", "Banane"), "Citron"),
-        Question("Quel est le légume vert le plus populaire?", listOf("Laitue", "Epinard", "Brocoli", "Chou"), "Brocoli"),
-        Question("Quel est le fruit tropical le plus sucré?", listOf("Ananas", "Mangue", "Papaye", "Goyave"), "Ananas"),
-        Question("Quel est le légume racine le plus nourrissant?", listOf("Pomme de terre", "Carotte", "Betterave", "Rave"), "Pomme de terre"),
-        Question("Quel est le fruit exotique le plus juteux?", listOf("Passion", "Grenade", "Litchi", "Kiwi"), "Passion"),
-        Question("Quel est le légume le plus amer?", listOf("Artichaut", "Chou-fleur", "Céleri", "Radis"), "Artichaut"),
-        Question("Quel est le fruit le plus sucré du monde?", listOf("Datte", "Figue", "Raisin", "Prune"), "Datte"),
-        Question("Quel est le légume le plus facile à cultiver?", listOf("Tomate", "Poivron", "Aubergine", "Concombre"), "Tomate")
-    )
+    private val questions = mutableListOf<Question>()
+
 
     private lateinit var binding: FragmentFruitVegetablesBinding
     private lateinit var optionsLinearLayout: LinearLayout
@@ -52,6 +43,17 @@ class FruitVegetables : Fragment() {
         questionTextView = binding.questionTextView
         optionsLinearLayout = binding.optionsLinearLayout
         submitButton = binding.submitButton
+
+
+        val jsonString = context?.assets?.open("fruits.json")?.bufferedReader().use { it?.readText() }
+
+        if (!jsonString.isNullOrEmpty()) {
+            val gson = Gson()
+            questions.addAll(gson.fromJson(jsonString, Array<Question>::class.java).toList())
+        } else {
+            // gérer le cas où le fichier JSON est introuvable
+            Toast.makeText(requireContext(), "Fichier JSON introuvable!", Toast.LENGTH_SHORT).show()
+        }
 
         nextQuestion()
 
@@ -83,20 +85,19 @@ class FruitVegetables : Fragment() {
                 val dialogBuilder = AlertDialog.Builder(requireContext())
                     .setTitle("Quiz Score")
                     .setMessage("You scored $score out of ${questions.size}")
-                    .setPositiveButton("OK") { dialog, which ->
-                        // Navigate back to the MainActivity
-
+                    .setPositiveButton("OK") { _, _ ->
+                        // TODO :  Navigate back to the MainActivity
                     }
-                    .setNegativeButton("Retour") { dialog, which ->
-                        // Navigate back to the quiz themes activity
+                    .setNegativeButton("Retour") { _, _ ->
+                        // TODO : Navigate back to the quiz themes activity
                         val intent = Intent(activity, ThemesOfQueezActivity::class.java)
                         startActivity(intent)
                     }
                 dialogBuilder.create().show()
 
+
             }
         }
-
 
         return binding.root
     }
@@ -104,20 +105,9 @@ class FruitVegetables : Fragment() {
         return score
     }
 
-    private fun getSelectedOption(question: Question): String? {
-        for (i in 0 until optionsLinearLayout.childCount) {
-            val view = optionsLinearLayout.getChildAt(i)
-            if (view is RelativeLayout) {
-                val optionTextView = view.getChildAt(0) as TextView
-                if (view.backgroundTintList == ColorStateList.valueOf(Color.GREEN)) {
-                    return optionTextView.text.toString()
-                }
-            }
-        }
-        return null
-    }
 
 
+    private var selectedOptionRelativeLayout: RelativeLayout? = null
 
     private fun nextQuestion() {
         questionTextView.text = questions[currentQuestion].text
@@ -134,11 +124,13 @@ class FruitVegetables : Fragment() {
             optionRelativeLayout.layoutParams = params
             optionRelativeLayout.setBackgroundResource(R.drawable.rectangle)
             optionRelativeLayout.setOnClickListener {
-                optionRelativeLayout.backgroundTintList = ColorStateList.valueOf(Color.GREEN)
-                for (j in 0 until optionsLinearLayout.childCount) {
-                    val view = optionsLinearLayout.getChildAt(j)
-                    view.isClickable = false
+                if (selectedOptionRelativeLayout != null) {
+                    selectedOptionRelativeLayout?.backgroundTintList = ColorStateList.valueOf(
+                        ContextCompat.getColor(requireContext(), R.color.gray)
+                    )
                 }
+                optionRelativeLayout.backgroundTintList = ColorStateList.valueOf(Color.GREEN)
+                selectedOptionRelativeLayout = optionRelativeLayout
             }
             val optionTextView = TextView(requireContext())
             optionTextView.text = questions[currentQuestion].options[i]
@@ -147,4 +139,39 @@ class FruitVegetables : Fragment() {
             optionsLinearLayout.addView(optionRelativeLayout)
         }
     }
+    override fun onStart() {
+        super.onStart()
+        Log.d("FruitVegetables", "onStart called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("FruitVegetables", "onResume called")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("FruitVegetables", "onPause called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("FruitVegetables", "onStop called")
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.d("FruitVegetables", "onDestroyView called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("FruitVegetables", "onDestroy called")
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        Log.d("FruitVegetables", "onDetach called")
+    }
+
 }

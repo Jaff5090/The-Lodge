@@ -5,34 +5,69 @@
     android:layout_width="match_parent"
     android:background="@color/background"
     android:layout_height="match_parent"
-    android:layout_marginTop="45dp"
     android:gravity="center"
     tools:context=".activities.QuestionsActivity">
 
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/LinearDrawer"
         android:layout_width="match_parent"
-        android:background="@color/background"
-        android:elevation="24dp"
-        android:gravity="center"
-        android:layout_height="match_parent">
+        android:layout_height="50dp">
 
-        <TextView
-            android:id="@+id/textType"
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/drawer_icon"
+            android:src="@drawable/ic_baseline_menu_24"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/primary_color"
-            android:textAlignment="center"
+            android:padding="16dp"
+            android:clickable="true"/>
+    </LinearLayout>
 
-            android:textSize="24sp"
-            android:text=""/>
-        <FrameLayout
-            android:id="@+id/container_fragment"
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/LinearDrawer">
+
+        <!-- Contenu principal -->
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/background"
-            android:layout_below="@+id/textType"/>
+            android:background="@color/background">
 
-    </RelativeLayout>
+            <!-- Votre contenu actuel -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/background"
+                android:elevation="24dp"
+                android:gravity="center"
+                android:layout_height="match_parent">
 
+                <TextView
+                    android:id="@+id/textType"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary_color"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:text=""/>
+                <FrameLayout
+                    android:id="@+id/container_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/background"
+                    android:layout_below="@+id/textType"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- Menu du drawer -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            app:headerLayout="@layout/headernavdrawer"
+            app:menu="@menu/menudrawer"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
 </RelativeLayout>

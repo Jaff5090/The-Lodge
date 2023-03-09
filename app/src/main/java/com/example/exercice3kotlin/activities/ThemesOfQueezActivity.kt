@@ -1,106 +1,72 @@
-package com.example.exercice3kotlin
+package com.example.exercice3kotlin.activities
 
-import android.annotation.SuppressLint
 import android.graphics.Rect
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.exercice3kotlin.R
 import com.example.exercice3kotlin.adapter.ThemeQuizAdapter
-import com.example.exercice3kotlin.activities.QuizThemeViewModel
+import com.example.exercice3kotlin.databinding.ActivityThemesOfQueezBinding
 
 class ThemesOfQueezActivity : AppCompatActivity() {
-    private lateinit var nameR: TextView
-    private lateinit var birthR: TextView
-    private lateinit var ButtomItems: ImageView
 
-
-    @SuppressLint("MissingInflatedId")
+    companion object {
+        const val NAME_KEY = "NAME"
+        const val BIRTHDATE_KEY = "BIRTHDATE"
+    }
+    private lateinit var binding: ActivityThemesOfQueezBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_themes_of_queez)
-        ButtomItems = findViewById(R.id.ButtomItems)
-        nameR = findViewById(R.id.setName)
-        birthR = findViewById(R.id.setBirthday)
+        binding = ActivityThemesOfQueezBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        val name = intent.getStringExtra(NAME_KEY)
+        val bithR = intent.getStringExtra(BIRTHDATE_KEY)
 
-        val name = intent.getStringExtra("NAME")
-        val bithR = intent.getStringExtra("BIRTHDATE")
+        binding.setName.text = name
+        binding.setBirthday.text = bithR
 
-        nameR.setText(name)
-        birthR.setText(bithR)
-        // getting the recyclerview by its id
-        val recyclerview = findViewById<RecyclerView>(R.id.rvThemeQuiz)
+        binding.rvThemeQuiz.layoutManager = LinearLayoutManager(this)
+        binding.rvThemeQuiz.addItemDecoration(SmallerItemDecoration(10))
 
-        // this creates a vertical layout Manager
-        recyclerview.layoutManager = LinearLayoutManager(this)
-        recyclerview.addItemDecoration(SmallerItemDecoration(10))
-
-
-        // ArrayList of class ItemsViewModel
         val data = ArrayList<QuizThemeViewModel>()
+        data.add(QuizThemeViewModel(R.drawable.animals, getString(R.string.quiz_theme_animals)))
+        data.add(QuizThemeViewModel(R.drawable.history, getString(R.string.quiz_theme_history)))
+        data.add(QuizThemeViewModel(R.drawable.geogra, getString(R.string.quiz_theme_geography)))
+        data.add(QuizThemeViewModel(R.drawable.fruits, getString(R.string.quiz_theme_fruits_and_veggies)))
 
-        data.add(QuizThemeViewModel(R.drawable.animals,"Animals"));
-        data.add(QuizThemeViewModel(R.drawable.history,"History"));
-        data.add(QuizThemeViewModel(R.drawable.geogra,"Geography"));
-        data.add(QuizThemeViewModel(R.drawable.fruits,"fruits and vegetables"));
-
-
-        // This loop will create 20 Views containing
-        // the image with the count of view
-       /* for (i in 1..8) {
-            data.add(QuizThemeViewModel(R.drawable.ic_baseline_settings_24, "Item " + i))
-        }*/
-
-        // This will pass the ArrayList to our Adapter
         val adapter = ThemeQuizAdapter(data)
+        binding.rvThemeQuiz.adapter = adapter
+    }
 
-        // Setting OnClickListener for the adapter
-       /* adapter.setOnClickListener(object : ThemeQuizAdapter.OnClickListener {
-            override fun onClick(position: Int) {
-                val intent = Intent(this@ThemesOfQueezActivity, Navigations::class.java)
-                startActivity(intent)
-            }
-        })*/
-        /**ButtomItems.setOnClickListener {
-            val items = arrayOf("Themes quiz","account", "profile")
-            val builder = AlertDialog.Builder(this)
+    override fun onStart() {
+        super.onStart()
+        Log.d("ThemesOfQueezActivity", "onStart")
+    }
 
-            builder.setItems(items) { dialog, which ->
-                when (which) {
-                    0 -> {
-                        // action for item 1 (Compte)
-                    }
-                    1 -> {
-                        // action for item 2 (Paramètres)
-                    }
-                    2 -> {
-                        // action for item 2 (Paramètres)
-                    }
+    override fun onResume() {
+        super.onResume()
+        Log.d("ThemesOfQueezActivity", "onResume")
+    }
 
-                }
-            }
-            val dialog = builder.create()
-            val window = dialog.window
-            window!!.setGravity(Gravity.TOP or Gravity.END)
-            val params = window.attributes
+    override fun onPause() {
+        super.onPause()
+        Log.d("ThemesOfQueezActivity", "onPause")
+    }
 
-            params.verticalMargin = 0.0f
-            params.horizontalMargin = 0.0f
-            window.attributes = params
+    override fun onStop() {
+        super.onStop()
+        Log.d("ThemesOfQueezActivity", "onStop")
+    }
 
-            dialog.show()
-        }**/
-
-
-
-        // Setting the Adapter with the recyclerview
-        recyclerview.adapter = adapter
-
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("ThemesOfQueezActivity", "onDestroy")
     }
 }
+
 class SmallerItemDecoration(private val height: Int) : RecyclerView.ItemDecoration() {
     override fun getItemOffsets(
         outRect: Rect,

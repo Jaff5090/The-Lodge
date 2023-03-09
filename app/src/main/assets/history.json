@@ -58,25 +58,5 @@
       "8 mai 1945"
     ],
     "answer": "4 juillet 1776"
-  },
-  {
-    "text": "Quelle est la date de la chute du Mur de Berlin?",
-    "options": [
-      "9 novembre 1989",
-      "4 juillet 1776",
-      "14 juillet 1789",
-      "8 mai 1945"
-    ],
-    "answer": "9 novembre 1989"
-  },
-  {
-    "text": "Quelle est la date de la fin de la seconde guerre mondiale en Europe?",
-    "options": [
-      "8 mai 1945",
-      "9 novembre 1989",
-      "4 juillet 1776",
-      "14 juillet 1789"
-    ],
-    "answer": "8 mai 1945"
   }
 ]
