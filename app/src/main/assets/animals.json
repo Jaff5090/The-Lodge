@@ -1,0 +1,62 @@
+[
+    {
+      "text": "Quel est le nom de l'animal qui a des rayures et vit dans les arbres?",
+      "options": [
+        "Lion",
+        "Girafe",
+        "Zèbre",
+        "Tigre"
+      ],
+      "answer": "Tigre"
+    },
+    {
+      "text": "Quel est le plus grand animal terrestre?",
+      "options": [
+        "Elephant",
+        "Rhinocéros",
+        "Gorille",
+        "Buffalo"
+      ],
+      "answer": "Elephant"
+    },
+    {
+      "text": "Quel est l'animal le plus rapide sur terre?",
+      "options": [
+        "Cheetah",
+        "Leopard",
+        "Lion",
+        "Tigre"
+      ],
+      "answer": "Cheetah"
+    },
+    {
+      "text": "Quel est l'animal le plus grand du monde?",
+      "options": [
+        "Baleine Bleue",
+        "Requin Blanc",
+        "Orque",
+        "Dauphin"
+      ],
+      "answer": "Baleine Bleue"
+    },
+    {
+      "text": "Quel est l'animal considéré comme le plus intelligent?",
+      "options": [
+        "Dauphin",
+        "Chimpanzé",
+        "Elephant",
+        "Corbeau"
+      ],
+      "answer": "Dauphin"
+    },
+    {
+      "text": "Quel est l'animal le plus grand dans les airs?",
+      "options": [
+        "Aigle",
+        "Faucon",
+        "Vautour",
+        "Albatros"
+      ],
+      "answer": "Albatros"
+    }
+]

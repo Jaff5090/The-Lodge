@@ -4,25 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThemesOfQueezActivity">
+    android:background="@drawable/backgroundsplashscreen"
+    tools:context=".activities.ThemesOfQueezActivity">
 
     <LinearLayout
         android:id="@+id/navbar"
+<<<<<<< HEAD
         android:elevation="24dp"
         app:cardUseCompatPadding="true"
+=======
+>>>>>>> 5c9b6bb5a126893dd07b08b0d5e58d0f107afd71
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:elevation="24dp"
+        app:cardUseCompatPadding="true"
         android:orientation="horizontal">
 
         <TextView
-
-            android:layout_marginLeft="10dp"
-            android:textStyle="italic|bold"
+            android:id="@+id/setName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:id="@+id/setName"
             android:textColor="@color/white"
             android:text="hazifohazoi"
+=======
+            android:layout_marginStart="10dp"
+            android:textStyle="italic|bold"
+
+            android:textColor="#FFFF"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+>>>>>>> 5c9b6bb5a126893dd07b08b0d5e58d0f107afd71
             android:layout_gravity="center"/>
 
 
@@ -35,13 +48,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/setBirthday"
+<<<<<<< HEAD
             android:textColor="@color/white"
+=======
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+
+            android:textColor="#FFFF"
+>>>>>>> 5c9b6bb5a126893dd07b08b0d5e58d0f107afd71
             android:layout_gravity="center"/>
 
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1"/>
+<<<<<<< HEAD
         <ImageButton
             android:id="@+id/ButtomItems"
             android:layout_width="wrap_content"
@@ -53,6 +74,8 @@
 
 
 
+=======
+>>>>>>> 5c9b6bb5a126893dd07b08b0d5e58d0f107afd71
 
     </LinearLayout>
 
@@ -69,6 +92,10 @@
         android:layout_below="@+id/navbar"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5c9b6bb5a126893dd07b08b0d5e58d0f107afd71
         android:padding="10dp" />
 
     <RelativeLayout

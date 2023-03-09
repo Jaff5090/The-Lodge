@@ -3,8 +3,7 @@
     <style name="AppNameWhite" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <!-- Primary brand color. -->
         <item name="android:fontFamily">@font/roboto_italic</item>
-        <item name="colorPrimary">@color/mon_logo_background</item>
-
+        <item name="colorPrimary">#000000</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -17,6 +16,15 @@
 
 
         <!-- Customize your theme here. -->
+
+
+
+    </style>
+    <style name="MyCustomDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:background">#020202</item>
+        <item name="colorAccent">#456CFA</item>
+        <item name="android:textColorPrimary">@color/gray</item>
+        <item name="android:textColorSecondary">#000000</item>
     </style>
     <style name="MyCustomDialogStyle" parent="Theme.AppCompat.Light.Dialog">
         <item name="android:background">#7B7B7B</item>

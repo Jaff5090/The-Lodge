@@ -1,0 +1,63 @@
+[
+  {
+    "text": "Quel est le fruit le plus rouge?",
+    "options": [
+      "Cerise",
+      "Fraise",
+      "Tomate",
+      "Framboise"
+    ],
+    "answer": "Cerise"
+  },
+  {
+    "text": "Quel est le légume le plus long?",
+    "options": [
+      "Concombre",
+      "Carotte",
+      "Aubergine",
+      "Poivron"
+    ],
+    "answer": "Concombre"
+  },
+  {
+    "text": "Quel est le fruit le plus acide?",
+    "options": [
+      "Pomme",
+      "Citron",
+      "Orange",
+      "Banane"
+    ],
+    "answer": "Citron"
+  },
+  {
+    "text": "Quel est le légume vert le plus populaire?",
+    "options": [
+      "Laitue",
+      "Epinard",
+      "Brocoli",
+      "Chou"
+    ],
+    "answer": "Brocoli"
+  },
+  {
+    "text": "Quel est le fruit tropical le plus sucré?",
+    "options": [
+      "Ananas",
+      "Mangue",
+      "Papaye",
+      "Goyave"
+    ],
+    "answer": "Ananas"
+  },
+  {
+    "text": "Quel est le légume racine le plus nourrissant?",
+    "options": [
+      "Pomme de terre",
+      "Carotte",
+      "Betterave",
+      "Rave"
+    ],
+    "answer": "Pomme de terre"
+  }
+
+]
