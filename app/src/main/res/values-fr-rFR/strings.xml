@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">"My First Kotlin Project "</string>
+    <string name="app_name">Le Lodge</string>
+    <string name="Quiz" translatable="false">Quiz</string>
+    <string name="First_Name" translatable="false">Prénom</string>
+    <string name="date_of_birth" translatable="false">Date de naissance</string>
+    <string name="let_s_start" translatable="false">Commençons</string>
+    <string name="submit" translatable="false">Soumettre</string>
+    <string name="quiz_theme_animals" translatable="false">Animaux</string>
+    <string name="quiz_theme_history" translatable="false">Histoire</string>
+    <string name="quiz_theme_geography" translatable="false">Géographie</string>
+    <string name="quiz_theme_fruits_and_veggies" translatable="false">Fruits et légumes</string>
+    <string name="item" translatable="false">Item</string>
+    <string name="profile_image" translatable="false" />
+    <string name="the_lodge" translatable="false">The Lodge</string>
+    <string name="theme_of_quiz" translatable="false">Theme de Quiz</string>
+    <string name="edit_profile" translatable="false">Editer Ton Profil</string>
+
 </resources>

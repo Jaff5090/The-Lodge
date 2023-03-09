@@ -1,0 +1,62 @@
+[
+  {
+    "text": "Quelle est la capitale de la France?",
+    "options": [
+      "Paris",
+      "Londres",
+      "Berlin",
+      "Rome"
+    ],
+    "answer": "Paris"
+  },
+  {
+    "text": "Quel est le plus grand planète dans notre système solaire?",
+    "options": [
+      "Jupiter",
+      "Saturne",
+      "Uranus",
+      "Mars"
+    ],
+    "answer": "Jupiter"
+  },
+  {
+    "text": "Quel est le plus petit pays dans le monde?",
+    "options": [
+      "Monaco",
+      "Vatican",
+      "Saint-Marin",
+      "Nauru"
+    ],
+    "answer": "Saint-Marin"
+  },
+  {
+    "text": "Quelle est la monnaie utilisée au Japon?",
+    "options": [
+      "Yen",
+      "Won",
+      "Dollar",
+      "Euro"
+    ],
+    "answer": "Yen"
+  },
+  {
+    "text": "Quel est le plus haut montagne dans le monde?",
+    "options": [
+      "Mont Everest",
+      "K2",
+      "Kangchenjunga",
+      "Lhotse"
+    ],
+    "answer": "Mont Everest"
+  },
+  {
+    "text": "Quel est le nom du plus long fleuve du monde?",
+    "options": [
+      "Nil",
+      "Amazone",
+      "Yangtze",
+      "Jaune"
+    ],
+    "answer": "Nil"
+  }
+]

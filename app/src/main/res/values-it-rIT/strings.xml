@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">"My First Kotlin Project "</string>
+    <string name="app_name">La Locanda</string>
+    <string name="Quiz" translatable="false">Quiz</string>
+    <string name="First_Name" translatable="false">Nome</string>
+    <string name="date_of_birth" translatable="false">Data di nascita</string>
+    <string name="let_s_start" translatable="false">Iniziamo</string>
+    <string name="submit" translatable="false">Invia</string>
+    <string name="quiz_theme_animals" translatable="false">Animali</string>
+    <string name="quiz_theme_history" translatable="false">Storia</string>
+    <string name="quiz_theme_geography" translatable="false">Geografia</string>
+    <string name="quiz_theme_fruits_and_veggies" translatable="false">Frutta e verdura</string>
+
 </resources>
