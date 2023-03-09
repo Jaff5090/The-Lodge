@@ -3,14 +3,10 @@
 ![Language](https://img.shields.io/github/languages/top/cortinico/kotlin-android-template?color=blue&logo=kotlin)
 # Basic UI
 
-<p float="left">
-  <img src="./bloggif_6409fcd749ee0.gif" width="200"/> 
-  <h3>The Lodge:</h3>
-  <p>The Android application developed in Kotlin, called the The Lodge, uses a welcome activity to enable the user to sign up. After the registration process is complete, the user can use a Recycler View to select the quiz's subject matter.</p>
-  <p>Upon choosing the theme, the user navigates to the questionnaire through tabs located at the bottom of the screen . The questionnaire is divided into two separate fragments for questions and answers.</p>
-  <p>When participating in the quiz, the user will receive a score based on the number of correctly answered questions. This score can be represented using a progress bar or expressed as a percentage.</p>
-  <p>Overall, the app provides an intuitive experience for users seeking to take quizzes on various subjects.</p>
-</p>
+| ![](./bloggif_6409fcd749ee0.gif) |
+|:---:|
+| # The Lodge:<br>The Android application developed in Kotlin, called the The Lodge, uses a welcome activity to enable the user to sign up. After the registration process is complete, the user can use a Recycler View to select the quiz's subject matter.<br>Upon choosing the theme, the user navigates to the questionnaire through tabs located at the bottom of the screen . The questionnaire is divided into two separate fragments for questions and answers.<br>When participating in the quiz, the user will receive a score based on the number of correctly answered questions. This score can be represented using a progress bar or expressed as a percentage.<br>Overall, the app provides an intuitive experience for users seeking to take quizzes on various subjects. |
+
 
 
 
