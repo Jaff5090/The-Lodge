@@ -28,6 +28,11 @@ This is an Android project made with [Kotlin language](https://kotlinlang.org/do
    ```
    
 # Dependencies: 
+numpy==1.18.5
+pandas==1.0.4
+matplotlib==3.2.2
+flask==1.1.2
+
 
 ## Libraries
 
