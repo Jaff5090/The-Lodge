@@ -1,6 +1,7 @@
 <resources>
 
     <string name="app_name">The Lodge </string>
+
     <string name="Quiz" translatable="false">Quiz </string>
     <string name="First_Name" translatable="false">first name</string>
     <string name="date_of_birth" translatable="false">Date of Birth</string>
@@ -31,6 +32,7 @@
     <string name="quizz" translatable="false">GO to Quizz</string>
     <string name="title_activity_navigations">Navigations</string>
     <string name="heloooooooooooooooooooooooo">heloooooooooooooooooooooooo</string>
+
 
 
 </resources>

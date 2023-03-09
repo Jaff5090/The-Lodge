@@ -14,8 +14,7 @@ import com.example.exercice3kotlin.activities.QuestionsActivity
 class ThemeQuizAdapter(private val mList: List<QuizThemeViewModel>) : RecyclerView.Adapter<ThemeQuizAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
-        val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_theme_quiz, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_theme_quiz, parent, false)
 
         return ViewHolder(view)
     }

@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         // TODO : Date Picker
         binding.datePickerButton.setOnClickListener {
             showDatePicker()
