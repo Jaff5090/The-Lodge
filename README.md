@@ -40,61 +40,41 @@ This is an Android project made with [Kotlin language](https://kotlinlang.org/do
 
 ## App 📲 Screenshots 📸
 
-<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
+
+<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px;">
+        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="200">
+    </div>
+
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px;">
+        <img src="./binddata.jpg" alt="Capture d'écran de l'application" width="200">
+    </div>
+
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px;">
+        <img src="./datepicker.jpg" alt="Capture d'écran de l'application" width="200">
+    </div>
+
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px;">
+        <img src="./drawerlayout.jpg" alt="Capture d'écran de l'application" width="200">
+    </div>
+
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px;">
+        <img src="./spashscrenn.jpg" alt="Capture d'écran de l'application" width="200">
+    </div>
+
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px;">
+        <img src="./score.jpg" alt="Capture d'écran de l'application" width="200">
+    </div>
+
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px;">
+        <img src="./recycler.jpg" alt="Capture d'écran de l'application" width="200">
+    </div>
+
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px;">
+        <img src="./questions.jpg" alt="Capture d'écran de l'application" width="200">
     </div>
 </div>
 
-
-<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
- </div>
-<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
-<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
-
-<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
-  
-<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
-  
-
-<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
-  
-  <div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
-    
-
-  <div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
-
-</div>
 
 
 
