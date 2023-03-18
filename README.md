@@ -39,6 +39,7 @@ This is an Android project made with [Kotlin language](https://kotlinlang.org/do
 
 
 ## App 📲 Screenshots 📸
+<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: flex; flex-wrap: wrap; justify-content: space-between;">
 
 
 <div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
@@ -96,6 +97,8 @@ This is an Android project made with [Kotlin language](https://kotlinlang.org/do
 </div>
 
 </div>
+  
+  </div>
 
 
 
