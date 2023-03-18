@@ -41,74 +41,10 @@ This is an Android project made with [Kotlin language](https://kotlinlang.org/do
 ## App 📲 Screenshots 📸
 <div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: flex; flex-wrap: wrap; justify-content: space-between;">
 
-
-
-
-<img src="./answer.jpg" width="200"/> || <img src="./questions.jpg" width="200"/> || 
+<img src="./spashscrenn.jpg" width="200"/> || <img src="./datepicker.jpg" width="200"/> ||   <img src="./binddata.jpg" width="200"/> ||   <img src="./recycler.jpg" width="200"/>
 
 <br>
-
-<img src="https://github.com/halilozel1903/DarkMode/blob/master/app/src/main/res/drawable/screen_3.png" width="200"/> || <img src="https://github.com/halilozel1903/DarkMode/blob/master/app/src/main/res/drawable/screen_2.png" width="200"/>
-
-
-
-<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
- </div>
-<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
-<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
-
-<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
-  
-<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
-  
-
-<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
-  
-  <div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
-    
-
-  <div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
-
-</div>
-  
-  </div>
-
-
-
-
-
-
-
+<img src="./questions.jpg" width="200"/> || <img src="./answer.jpg" width="200"/> ||   <img src="./drawerlayout.jpg" width="200"/> ||   <img src="./score.jpg" width="200"/>
 
 
 
