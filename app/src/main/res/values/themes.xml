@@ -20,7 +20,7 @@
 
 
     </style>
-    <style name="MyCustomDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+    <style name="MyCustomDialogStyle." parent="Theme.AppCompat.Light.Dialog">
         <item name="android:background">#020202</item>
         <item name="colorAccent">#456CFA</item>
         <item name="android:textColorPrimary">@color/gray</item>
