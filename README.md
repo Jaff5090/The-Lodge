@@ -39,13 +39,13 @@ This is an Android project made with [Kotlin language](https://kotlinlang.org/do
 
 
   ## App 📲 Screenshots 📸
-  ![Capture d'écran de l'application](./screenshots/screenshot.png)
-![Capture d'écran de l'application](./screenshots/screenshot.png)
-![Capture d'écran de l'application](./screenshots/screenshot.png)
-![Capture d'écran de l'application](./screenshots/screenshot.png)
-![Capture d'écran de l'application](./screenshots/screenshot.png)
-![Capture d'écran de l'application](./screenshots/screenshot.png)
-![Capture d'écran de l'application](./screenshots/screenshot.png)
+![Capture d'écran de l'application](./answer.jpg)
+![Capture d'écran de l'application](./binddata.jpg)
+![Capture d'écran de l'application](./datepicker.jpg)
+![Capture d'écran de l'application](./drawerlayout.jpg)
+![Capture d'écran de l'application](./spashscrenn.jpg)
+![Capture d'écran de l'application](./score.jpg)
+![Capture d'écran de l'application](./recycler.jpg)
 ![Capture d'écran de l'application](./questions.jpg)
 
 
