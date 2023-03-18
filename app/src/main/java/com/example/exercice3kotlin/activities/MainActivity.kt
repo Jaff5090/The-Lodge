@@ -1,9 +1,10 @@
 package com.example.exercice3kotlin.activities
-
+import com.example.exercice3kotlin.activities.ThemesOfQueezActivity
 import android.app.DatePickerDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.*
 import android.util.Log
 import android.widget.*
 import com.example.exercice3kotlin.R
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
 
 

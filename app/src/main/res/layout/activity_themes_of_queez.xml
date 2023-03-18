@@ -19,6 +19,7 @@
             android:id="@+id/setName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:layout_marginStart="10dp"
             android:textStyle="italic|bold"
 
@@ -37,16 +38,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/setBirthday"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:layout_margin="10dp"
 
-            android:textColor="#FFFF"
+
             android:layout_gravity="center"/>
 
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_weight="1"/>
+
 
     </LinearLayout>
 
@@ -63,7 +66,6 @@
         android:layout_below="@+id/navbar"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-
         android:padding="10dp" />
 
     <RelativeLayout
