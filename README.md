@@ -39,6 +39,15 @@ This is an Android project made with [Kotlin language](https://kotlinlang.org/do
 
 
   ## App 📲 Screenshots 📸
+  ![Capture d'écran de l'application](./screenshots/screenshot.png)
+![Capture d'écran de l'application](./screenshots/screenshot.png)
+![Capture d'écran de l'application](./screenshots/screenshot.png)
+![Capture d'écran de l'application](./screenshots/screenshot.png)
+![Capture d'écran de l'application](./screenshots/screenshot.png)
+![Capture d'écran de l'application](./screenshots/screenshot.png)
+![Capture d'écran de l'application](./screenshots/screenshot.png)
+![Capture d'écran de l'application](./questions.jpg)
+
 
 
 
