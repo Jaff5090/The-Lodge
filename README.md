@@ -42,11 +42,14 @@ This is an Android project made with [Kotlin language](https://kotlinlang.org/do
 <div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: flex; flex-wrap: wrap; justify-content: space-between;">
 
 
-<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
-    </div>
-</div>
+
+
+<img src="./answer.jpg" width="200"/> || <img src="./questions.jpg" width="200"/> || 
+
+<br>
+
+<img src="https://github.com/halilozel1903/DarkMode/blob/master/app/src/main/res/drawable/screen_3.png" width="200"/> || <img src="https://github.com/halilozel1903/DarkMode/blob/master/app/src/main/res/drawable/screen_2.png" width="200"/>
+
 
 
 <div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
