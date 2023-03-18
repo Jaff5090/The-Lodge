@@ -17,4 +17,14 @@
         <item name="android:textColorPrimary">@color/gray</item>
         <item name="android:textColorSecondary">#000000</item>
     </style>
+    <style name="MyCustomDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:background">#7B7B7B</item>
+        <item name="colorAccent">#C9A7820C</item>
+        <item name="android:textColorPrimary">#C9FFFFFF</item>
+        <item name="android:textColorSecondary">#C9FFFFFF</item>
+    </style>
+    <style name="MyEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textCursorDrawable">@drawable/cursorcolor</item>
+        <item name="colorControlNormal">#C9A7820C</item>
+    </style>
 </resources>

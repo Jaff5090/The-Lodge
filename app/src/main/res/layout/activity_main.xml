@@ -12,12 +12,78 @@
    <androidx.cardview.widget.CardView
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
+<<<<<<< HEAD
+       android:layout_below="@+id/logo"
+
+       android:layout_centerInParent="true"
+       android:layout_marginStart="10dp"
+       android:layout_marginTop="70dp"
+       android:layout_marginEnd="10dp"
+       android:layout_marginBottom="10dp"
+       android:background="@drawable/border"
+       android:orientation="vertical">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:text="@string/first_name_and_last_name"
+          android:textSize="18sp"
+          android:textStyle="bold|italic" />
+
+      <EditText
+          android:id="@+id/inputName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:hint="@string/name_label"
+          android:minHeight="48dp"
+          android:inputType="text" />
+
+      <View
+          android:layout_width="wrap_content"
+          android:layout_height="50dp" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginBottom="10dp"
+          android:text="Email"
+          android:textSize="18sp"
+          android:textStyle="bold|italic" />
+
+      <EditText
+          android:id="@+id/inputEmail"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:hint="Taper votre email"
+          android:inputType="textEmailAddress"
+          android:minHeight="48dp" />
+
+      <View
+          android:layout_width="wrap_content"
+          android:layout_height="50dp" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+
+          android:text="Date de naissance "
+          android:textSize="18sp"
+          android:textStyle="bold|italic" />
+
+
+=======
        android:layout_marginStart="20dp"
        android:layout_marginEnd="20dp"
        android:background="@color/white"
        app:cardCornerRadius="8dp"
        app:cardElevation="5dp"
        >
+>>>>>>> 5c9b6bb5a126893dd07b08b0d5e58d0f107afd71
       <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"

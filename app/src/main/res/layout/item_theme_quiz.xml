@@ -6,14 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:clickable="true"
+<<<<<<< HEAD
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_margin="10dp"
+    android:background="@color/gray"
+    app:cardElevation="6dp">
+=======
     android:layout_margin="7dp"
     android:background="@color/background"
     app:cardElevation="3dp"
     android:focusable="true">
+>>>>>>> 5c9b6bb5a126893dd07b08b0d5e58d0f107afd71
 
     <LinearLayout
         android:layout_gravity="center"
-        android:background="@color/background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -32,8 +38,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+<<<<<<< HEAD
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:text="Item"
+=======
             android:textColor="@color/black"
             android:text="@string/item"
+>>>>>>> 5c9b6bb5a126893dd07b08b0d5e58d0f107afd71
             android:textSize="30sp"
             android:textStyle="bold" />
 
