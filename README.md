@@ -3,16 +3,18 @@
 ![Language](https://img.shields.io/github/languages/top/cortinico/kotlin-android-template?color=blue&logo=kotlin)
 # Basic UI
 
-![](./ezgif.com-optimize.gif)
+<p float="left">
+  <img src="./bloggif_6409fcd749ee0.gif" width="200"/> 
+  <h3>The Lodge:</h3>
+  <p>The Android application developed in Kotlin, called the The Lodge, uses a welcome activity to enable the user to sign up. After the registration process is complete, the user can use a Recycler View to select the quiz's subject matter.</p>
+  <p>Upon choosing the theme, the user navigates to the questionnaire through tabs located at the bottom of the screen . The questionnaire is divided into two separate fragments for questions and answers.</p>
+  <p>When participating in the quiz, the user will receive a score based on the number of correctly answered questions. This score can be represented using a progress bar or expressed as a percentage.</p>
+  <p>Overall, the app provides an intuitive experience for users seeking to take quizzes on various subjects.</p>
+</p>
 
-# The Lodge  :
-The Android application developed in Kotlin, called the The Lodge, uses a welcome activity to enable the user to sign up. After the registration process is complete, the user can use a Recycler View to select the quiz's subject matter.
 
-Upon choosing the theme, the user navigates to the questionnaire through tabs located at the bottom of the screen . The questionnaire is divided into two separate fragments for questions and answers.
 
-When participating in the quiz, the user will receive a score based on the number of correctly answered questions. This score can be represented using a progress bar or expressed as a percentage.
 
-Overall, the app provides an intuitive experience for users seeking to take quizzes on various subjects.
 
 # Getting started  :
 This is an Android project made with [Kotlin language](https://kotlinlang.org/docs/home.html).
@@ -27,7 +29,16 @@ This is an Android project made with [Kotlin language](https://kotlinlang.org/do
    
 # Dependencies: 
 
-## Libraries
+
+
+## Libraries 🛠 
+
+- [Kotlin](https://github.com/JetBrains/kotlin) -> A modern programming language that makes developers happier.
+- [Data Binding](https://developer.android.com/topic/libraries/data-binding) -> Support library that allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
+- [Json](https://javadoc.org/artifact/com.google.code.gson/gson/2.9.0/) -> Json library to stock our questions 
+
+
+  ## App 📲 Screenshots 📸
 
 
 
