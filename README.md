@@ -40,7 +40,7 @@ This is an Android project made with [Kotlin language](https://kotlinlang.org/do
 
   ## App 📲 Screenshots 📸
 
-<div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
+<!-- <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
     <img src="./answer.jpg" alt="Capture d'écran de l'application" style="max-width:100%;">
 </div>
 
@@ -70,6 +70,9 @@ This is an Android project made with [Kotlin language](https://kotlinlang.org/do
 
 <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
     <img src="./questions.jpg" alt="Capture d'écran de l'application" style="max-width:100%;">
+</div> -->
+<div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
+    <img src="./answer.jpg" alt="Capture d'écran de l'application" width="400">
 </div>
 
 
