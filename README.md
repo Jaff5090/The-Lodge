@@ -38,41 +38,40 @@ This is an Android project made with [Kotlin language](https://kotlinlang.org/do
 - [Json](https://javadoc.org/artifact/com.google.code.gson/gson/2.9.0/) -> Json library to stock our questions 
 
 
-  ## App 📲 Screenshots 📸
+## App 📲 Screenshots 📸
 
-<!-- <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <img src="./answer.jpg" alt="Capture d'écran de l'application" style="max-width:100%;">
-</div>
+<div style="width: 90%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
+        <img src="./answer.jpg" alt="Capture d'écran de l'application" width="300">
+    </div>
 
-<div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <img src="./binddata.jpg" alt="Capture d'écran de l'application" style="max-width:100%;">
-</div>
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
+        <img src="./binddata.jpg" alt="Capture d'écran de l'application" width="300">
+    </div>
 
-<div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <img src="./datepicker.jpg" alt="Capture d'écran de l'application" style="max-width:100%;">
-</div>
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
+        <img src="./datepicker.jpg" alt="Capture d'écran de l'application" width="300">
+    </div>
 
-<div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <img src="./drawerlayout.jpg" alt="Capture d'écran de l'application" style="max-width:100%;">
-</div>
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
+        <img src="./drawerlayout.jpg" alt="Capture d'écran de l'application" width="300">
+    </div>
 
-<div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <img src="./spashscrenn.jpg" alt="Capture d'écran de l'application" style="max-width:100%;">
-</div>
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
+        <img src="./spashscrenn.jpg" alt="Capture d'écran de l'application" width="300">
+    </div>
 
-<div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <img src="./score.jpg" alt="Capture d'écran de l'application" style="max-width:100%;">
-  </div>
-  
-  <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <img src="./recycler.jpg" alt="Capture d'écran de l'application" style="max-width:100%;">
-</div>
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
+        <img src="./score.jpg" alt="Capture d'écran de l'application" width="300">
+    </div>
 
-<div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <img src="./questions.jpg" alt="Capture d'écran de l'application" style="max-width:100%;">
-</div> -->
-<div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
-    <img src="./answer.jpg" alt="Capture d'écran de l'application" width="400">
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
+        <img src="./recycler.jpg" alt="Capture d'écran de l'application" width="300">
+    </div>
+
+    <div style="width: 45%; margin-right: 10px; margin-bottom: 10px; display: inline-block;">
+        <img src="./questions.jpg" alt="Capture d'écran de l'application" width="300">
+    </div>
 </div>
 
 
