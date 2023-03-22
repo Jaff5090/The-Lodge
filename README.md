@@ -33,7 +33,7 @@ This is an Android project made with [Kotlin language](https://kotlinlang.org/do
 
 ## Libraries 🛠 
 
-- [Kotlin](https://github.com/JetBrains/kotlin) -> A modern programming language that makes developers happier.
+- [Kotlin](https://developer.android.com/kotlin?gclid=CjwKCAjwzuqgBhAcEiwAdj5dRqGbZV9fCxo32WWWNaPFAuErXFGsx0XnbU2h050txqy_c0SlEV-OThoCu-0QAvD_BwE&gclsrc=aw.ds&hl=fr) -> A modern programming language that makes developers happier.
 - [Data Binding](https://developer.android.com/topic/libraries/data-binding) -> Support library that allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
 - [Json](https://javadoc.org/artifact/com.google.code.gson/gson/2.9.0/) -> Json library to stock our questions 
 
